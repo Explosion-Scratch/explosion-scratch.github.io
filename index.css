@@ -1,4 +1,4 @@
- p {
+ h4 {
   color: rgb(130,130,130);
   text-align: left;
   font-family: Impact, Charcoal, sans-serif;
@@ -7,6 +7,8 @@
 h1 {
   font-family: Impact, Charcoal, sans-serif;
   color: rgb(240,240,240);
+  text-decoration: underline;
+  text-align: center;
 }
 body {
   background-color: rgb(14, 14, 14);
