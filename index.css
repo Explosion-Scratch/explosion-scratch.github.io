@@ -1,4 +1,8 @@
  p {
   color: red;
   text-align: left;
+  font-family: Impact, Charcoal, sans-serif
  }
+p.impact {
+  font-family: Impact, Charcoal, sans-serif
+}
