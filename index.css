@@ -1,7 +1,8 @@
  p {
   color: rgb(130,130,130);
   text-align: left;
-  font-family: Impact, Charcoal, sans-serif
+  font-family: Impact, Charcoal, sans-serif;
+  padding: 16px;
  }
 h1 {
   font-family: Impact, Charcoal, sans-serif;
