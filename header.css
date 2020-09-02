@@ -10,11 +10,9 @@
 .content {
   padding: 16px
 }
+
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
-}
-.sticky + .context {
-  padding-top: 102px
+  width: 100%;
 }
