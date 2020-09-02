@@ -4,6 +4,12 @@
   font-family: Impact, Charcoal, sans-serif;
   padding: 16px;
  }
+ h5 {
+  color: rgb(179, 179, 179);
+  text-align: left;
+  font-family: Impact, Charcoal, sans-serif;
+  padding: 16px;
+ }
 h1 {
   font-family: Impact, Charcoal, sans-serif;
   color: rgb(240,240,240);
@@ -12,4 +18,8 @@ h1 {
 }
 body {
   background-color: rgb(14, 14, 14);
+}
+p {
+  color: rgb(200,200,200);
+  font-family: Impact, Charcoal, sans-serif;
 }
