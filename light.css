@@ -43,7 +43,7 @@ p {
 img {
   padding-right: 30px;
 }
- 
+
 ul.list li ::before {
   content: "\2022";
   color: white;
