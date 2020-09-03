@@ -15,7 +15,6 @@ h1 {
   color: rgb(240,240,240);
   text-decoration: underline;
   text-align: center;
-  margin-left: 120px;
 }
 body {
   background-color: rgb(14, 14, 14);
@@ -25,7 +24,6 @@ p {
   font-family: Impact, Charcoal, sans-serif;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: 120px;
 }
 img {
   padding-right: 20px;
@@ -36,5 +34,5 @@ ul li::before {
   font-weight: bold; 
   display: inline-block;
   width: 1em;
-  margin-left: 120px;
+  padding-left: 0px;
 }
