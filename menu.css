@@ -41,6 +41,5 @@ ul {
   list-style: none;
 }
 .collapsible {
-  position: fixed;
-  top: 6px;
+  position: relative;
 }
