@@ -1,16 +1,16 @@
 .header {
   overflow: hidden;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.61);
   padding: 10px 10px;
   font-family: "Arial Black", Black, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   color: rgb(124, 185, 55);
   border-radius: 5px;
   transition-duration: 1s;
   }
 .header:hover {
-  background-color:rgb(55, 55, 55);
+  background-color:rgba(0, 0, 0, 0.151);
   color: rgb(124, 185, 55);
 }
 .content {
@@ -43,5 +43,46 @@ button:hover {
   color: black;
   margin: 10px;
   background-color: rgb(124, 185, 55);
-  border: 2px solid black
+  border: 2px solid black;
+}
+.header ul {
+  font-family:Arial;
+  font-weight: bold;
+}
+.header ul { 
+  margin: 0 auto; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  text-align: center;
+}
+.header li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 5px 0;
+}
+.header a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 5px 5px;
+  position: relative;
+}
+.header a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 50%;
+  position: absolute;
+  background: rgb(124, 185, 55);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.header a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
