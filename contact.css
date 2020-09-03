@@ -2,8 +2,32 @@
   font-family: Montserrat;
   src: url(Montserrat-Bold.ttf);
 }
+html {
+  font-family: Montserrat !important;
+}
 h1 {
-  font-family: Montserrat
+  font-family: Montserrat !important;
+}
+h2 {
+  font-family: Montserrat !important;
+}
+h4 {
+  font-family: Montserrat !important;
+}
+h5 {
+  font-family: Montserrat !important;
+}
+h6 {
+  font-family: Montserrat !important;
+}
+a {
+  font-family: Montserrat !important;
+}
+p {
+  font-family: Montserrat !important;
+}
+ul {
+  font-family: Montserrat !important;
 }
 body {
   width: 100%;
