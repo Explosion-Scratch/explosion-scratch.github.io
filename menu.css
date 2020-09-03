@@ -1,17 +1,17 @@
 .menu {
   list-style-type: none !important; 
   margin: 0;
-  padding: 0;
+  padding: 0px;
   width: 120px;
   background-color: black;
   border-radius: 5px;
   transition-duration: 0.5s;
   height: 100%;
   position: fixed;
-  top: 80px;
+  top: 70px;
   overflow: auto;
   font-family: Impact, Charcoal, sans-serif;
-  opacity: 0.7;
+  opacity: 0.85;
   max-height: 0;
   transition: max-height 0.2s ease-out;
 }
@@ -23,6 +23,8 @@
   text-decoration: none;
   border-radius: 5px;
   transition-duration: 0.5s;
+  list-style: none;
+  padding: 20px;
 }
 
 /* Change the link color on hover */
@@ -35,4 +37,9 @@
 #menu:hover {
   opacity: 0.9;
 }
-
+ul {
+  list-style: none;
+}
+.collapsible {
+  position: relative;
+}
