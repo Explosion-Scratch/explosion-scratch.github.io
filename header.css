@@ -7,7 +7,12 @@
   font-weight: bold;
   color: rgb(124, 185, 55);
   border-radius: 5px;
+  transition-duration: 1s;
   }
+.header:hover {
+  background-color:rgb(55, 55, 55);
+  color: rgb(124, 185, 55);
+}
 .content {
   padding: 16px
 }
