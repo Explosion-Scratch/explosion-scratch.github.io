@@ -1,7 +1,7 @@
 .header {
   overflow: hidden;
   background-color: black;
-  padding: 20px 10px;
+  padding: 10px 10px;
   font-family: "Arial Black", Black, sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -26,6 +26,7 @@ button {
   background-color: black;
   transition-duration: 0.4s;
   border: 2px solid rgb(124, 185, 55);
+  float: right;
   
 }
 button:hover {
