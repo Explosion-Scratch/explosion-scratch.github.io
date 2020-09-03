@@ -10,19 +10,7 @@
 		<img src="logo.png" alt="My logo" style="padding-left: 20px; float:left;width:30px;height:30px;">
     --Explosion--
     </link>
-  </a>
 </div>
-
-<!-- Menu button -->
-<button type="button" class="collapsible">Menu</button>
-<ul class="menu" id="menu">
-  <!-- Menu -->
-  <li><a href="https://scratch.mit.edu/users/--explosion--">My scratch account</a></li>
-  <li><a href="https://github.com/explosion-scratch">GitHub</a></li>
-  <li><a href="mailto:explosionscratch@gmail.com">Email me</a></li>
-  <li><a href="https://sites.google.com/view/explosionscratch">Other website</a></li>
-  <li><a href="bookmarklets.html">Bookmarklets</a></li>
-</ul>
 
 <!-- Content -->
 <h1>Hi there!</h1>
@@ -37,8 +25,6 @@
     <li><a href="bookmarklets.html" style="color: #8ebf42; font-family: Impact, Charcoal, sans-serif;">Bookmarklets
     </a></li>
   <ul>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <h1>Yeet!!</h1>
 </p>
 
 
@@ -55,23 +41,5 @@ function myFunction() {
   } else {
     header.classList.remove("sticky");
   }
-}
-</script>
-
-<!-- Menu collapse script -->
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
 }
 </script>

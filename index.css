@@ -15,7 +15,7 @@ h1 {
   color: rgb(240,240,240);
   text-decoration: underline;
   text-align: center;
-  padding-left: 140px;
+  padding: 20px;
 }
 body {
   background-color: rgb(14, 14, 14);
@@ -23,7 +23,7 @@ body {
 p {
   color: rgb(200,200,200);
   font-family: Impact, Charcoal, sans-serif;
-  padding-left: 140px;
+  padding-left: 40px;
   padding-right: 40px;
 }
 
@@ -42,6 +42,6 @@ ul.list li ::before {
 }
 ul {
   list-style: none;
-  margin-left: 140px;
-
+  padding: 10;
+  padding-left: 80px
 }
