@@ -33,7 +33,7 @@ button {
   margin: 10px;
   background-color: #FDC649;
   transition-duration: 0.4s;
-  border: 2px solid #191A1A;
+  border: 2px solid #232424;
   float: right;
   
 }
@@ -43,7 +43,7 @@ button:hover {
   color: #191A1A;
   margin: 10px;
   background-color:#ED6D51;
-  border: 2px solid #191A1A;
+  border: 2px solid #232424;
 }
 .header ul {
   font-family:Arial;
