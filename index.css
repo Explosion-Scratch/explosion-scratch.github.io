@@ -28,11 +28,6 @@ p {
 img {
   padding-right: 20px;
 }
-
-ul {
-  list-style: none; /* Remove default bullets */
-}
-
 ul li::before {
   content: "\2022";
   color: white;
@@ -41,3 +36,4 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
 }
+
