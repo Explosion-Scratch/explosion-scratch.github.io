@@ -29,6 +29,7 @@ img {
   padding-right: 30px;
 }
 
+//Add a bullet point before items with the class "list"
 ul.list li ::before {
   content: "\2022";
   color: white;
