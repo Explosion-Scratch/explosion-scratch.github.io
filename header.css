@@ -17,3 +17,9 @@
   top: 0;
   width: 100%;
 }
+button {
+  padding: 5px;
+  border-radius: 5px;
+  color: blue;
+  margin: 10px;
+}
