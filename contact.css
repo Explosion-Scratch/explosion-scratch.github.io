@@ -1,0 +1,51 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(Montserrat-Bold.ttf);
+}
+html {
+  font-family: Montserrat !important;
+}
+h1 {
+  font-family: Montserrat !important;
+}
+h2 {
+  font-family: Montserrat !important;
+}
+h4 {
+  font-family: Montserrat !important;
+}
+h5 {
+  font-family: Montserrat !important;
+}
+h6 {
+  font-family: Montserrat !important;
+}
+a {
+  font-family: Montserrat !important;
+}
+p {
+  font-family: Montserrat !important;
+}
+ul {
+  font-family: Montserrat !important;
+}
+body {
+  width: 100%;
+  height: 100wh;
+  color: #fff;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23a6D5, #23d5ab);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+   0%{
+     background-position: 0 50%;
+   }
+   50%{
+     background-position: 100% 50%;
+   }
+   100%{
+     background-position: 0 50%;
+   }
+}
