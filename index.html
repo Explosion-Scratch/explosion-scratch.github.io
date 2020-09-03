@@ -1,27 +1,41 @@
 <head>
 	<link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="menu.css"
 </head>
 <!-- Header -->
 
 <div class="header" id="stickyheader">
-	<a class="logo">
 		<link rel="stylesheet" href="header.css">
-		<img src="logo.png" alt="My logo" style="padding-left: 20px; float:left;width:30px;height:30px;">
-    --Explosion--
+		<img src="logo.png" alt="My logo" style="padding-left: 20px; padding-right: 20px; float:left;width:30px;height:30px;">
     </link>
-  </a>
+    <a href=index.html>
+      <ul>
+        <li>
+          Home
+        </li>
+      </ul>
+    </a>
+    <a>
+      <ul>
+        <li>
+          Links
+        </li>
+      </ul>
+    </a>
+    <a href=bookmarklets.html>
+      <ul>
+        <li>
+          Bookmarklets
+        </li>
+      </ul>
+    </a>
+    <a href="mailto:explosionscratch@gmail.com">
+      <ul>
+        <li>
+          Contact me
+        </li>
+      </ul>
+    </a>
 </div>
-
-<!-- Menu button -->
-<button type="button" class="collapsible">Menu</button>
-<ul class="menu" id="menu">
-  <!-- Menu -->
-  <li><a href="https://scratch.mit.edu/users/--explosion--">My scratch account</a></li>
-  <li><a href="https://github.com/explosion-scratch">GitHub</a></li>
-  <li><a href="mailto:explosionscratch@gmail.com">Email me</a></li>
-  <li><a href="https://sites.google.com/view/explosionscratch">Other website</a></li>
-</ul>
 
 <!-- Content -->
 <h1>Hi there!</h1>
@@ -33,9 +47,9 @@
     </a></li>
     <li><a href="github.com/Explosion-Scratch" target="_blank" style="color: #8ebf42; font-family: Impact, Charcoal, sans-serif;">My GitHub account
     </a></li>
+    <li><a href="bookmarklets.html" style="color: #8ebf42; font-family: Impact, Charcoal, sans-serif;">Bookmarklets
+    </a></li>
   <ul>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <h1>Yeet!!</h1>
 </p>
 
 
@@ -52,23 +66,5 @@ function myFunction() {
   } else {
     header.classList.remove("sticky");
   }
-}
-</script>
-
-<!-- Menu collapse script -->
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
 }
 </script>
