@@ -35,4 +35,5 @@ ul li::before {
   display: inline-block;
   width: 1em;
   padding-left: 0px;
+  list-style-type: none  !important;
 }
