@@ -1,0 +1,37 @@
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  background-color: black;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  height: 100%;
+  position: fixed;
+  top: 80px;
+  overflow: auto;
+  font-family: Impact, Charcoal, sans-serif;
+  opacity: 0.3;
+}
+
+#menu li a {
+  display: block;
+  color: #8ebf42;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+/* Change the link color on hover */
+#menu li a:hover {
+  background-color: #8ebf42;
+  color: black;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+#menu:hover {
+  opacity: 0.9;
+}
+
+}

@@ -1,5 +1,6 @@
 <head>
 	<link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="menu.css"
 </head>
 <!-- Header -->
 
@@ -11,49 +12,17 @@
     </link>
   </a>
 </div>
+
+<!-- Menu button -->
+<button type="button" class="collapsible">Menu</button>
 <ul class="menu" id="menu">
+  <!-- Menu -->
   <li><a href="https://scratch.mit.edu/users/--explosion--">My scratch account</a></li>
   <li><a href="https://github.com/explosion-scratch">GitHub</a></li>
   <li><a href="mailto:explosionscratch@gmail.com">Email me</a></li>
   <li><a href="https://sites.google.com/view/explosionscratch">Other website</a></li>
 </ul>
-<style>
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 120px;
-  background-color: black;
-  border-radius: 5px;
-  transition-duration: 0.5s;
-  height: 100%;
-  position: fixed;
-  top: 80px;
-  overflow: auto;
-  font-family: Impact, Charcoal, sans-serif;
-  opacity: 0.3;
-}
 
-#menu li a {
-  display: block;
-  color: #8ebf42;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition-duration: 0.5s;
-}
-
-/* Change the link color on hover */
-#menu li a:hover {
-  background-color: #8ebf42;
-  color: black;
-  border-radius: 5px;
-  transition-duration: 0.5s;
-}
-#menu:hover {
-  opacity: 0.9;
-}
-</style>
 <!-- Content -->
 <h1>Hi there!</h1>
 <p>Welcome to my website! Thanks for checking it out! I'm working on improving it, but in the meantime here's some stuff you can look at:
@@ -85,7 +54,21 @@ function myFunction() {
   }
 }
 </script>
-<!-- 
-  <button type="button" onclick="Javascript: window.location.href = 'https://scratch.mit.edu/users/--explosion--'">Scratch Account</button>
-  <button type="button" onclick="Javascript: window.location.href = 'https://github.com/Explosion-Scratch'">GitHub</button>
-  <button type="button" onclick="Javascript: window.location.href = 'https://sites.google.com/view/explosionscratch'">Other website</button> -->
+
+<!-- Menu collapse script -->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
