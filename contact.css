@@ -1,3 +1,10 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(Montserrat-Bold.ttf);
+}
+h1 {
+  font-family: Montserrat
+}
 body {
   width: 100%;
   height: 100wh;
