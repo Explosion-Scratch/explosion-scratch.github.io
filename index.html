@@ -11,27 +11,43 @@
     </link>
   </a>
 </div>
-<!-- Vertical navbar -->
-<div id="verticalnavbar">
-  <ul>
-    <li>
-      <a href="https://scratch.mit.edu">
-       Scratch
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/explosion-scratch">
-      GitHub
-      </a>
-    </li>
-    <li>
-      <a href="mailto:explosionscratch@gmail.com">
-        Email me
-      </a>
-    </li>
-   <li><a href="https://sites.google.com/view/explosionscratch">My other website</a></li>
-  </ul>
-</div>
+<ul class="menu" id="menu">
+  <li><a href="https://scratch.mit.edu/users/--explosion--">My scratch account</a></li>
+  <li><a href="https://github.com.explosion-scratch">GitHub</a></li>
+  <li><a href="mailto:explosionscratch@gmail.com">Email me</a></li>
+  <li><a href="https://sites.google.com/view/explosionscratch">Other website</a></li>
+</ul>
+<style>
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  background-color: black;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+  height: 100%;
+  position: fixed;
+  top: 80px;
+  overflow: auto;
+}
+
+#menu li a {
+  display: block;
+  color: #8ebf42;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition-duration: 0.5s
+}
+
+/* Change the link color on hover */
+#menu li a:hover {
+  background-color: #8ebf42;
+  color: black;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+</style>
 <!-- Content -->
 <h1>Hi there!</h1>
 <p>Welcome to my website! Thanks for checking it out! I'm working on improving it, but in the meantime here's some stuff you can look at:
