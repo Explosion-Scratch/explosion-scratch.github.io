@@ -30,22 +30,22 @@ ul {
   font-family: Montserrat !important;
 }
  h2 {
-  color: #FAFAFA;
-  text-align: left;
-  padding: 16px;
- }
- h3 {
   color: #FDC649;
   text-align: left;
   padding: 16px;
  }
+ h3 {
+  color: #ED6D51;
+  text-align: left;
+  padding: 16px;
+ }
  h4 {
-  color: rgb(130,130,130);
+  color: #494346;
   text-align: left;
   padding: 16px;
  }
  h5 {
-  color: rgb(179, 179, 179);
+  color:#494346;
   text-align: left;
   padding: 16px;
  }
@@ -59,7 +59,7 @@ body {
   background-color: rgb(14, 14, 14);
 }
 p {
-  color: #796f74;
+  color: #232424;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -83,7 +83,7 @@ ul {
   padding-left: 80px
 }
 a {
-  color: #FDC649;
+  color: #FDBC28;
   font-weight: lighter;
 
 }
