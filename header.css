@@ -34,7 +34,6 @@ button {
   background-color: #FDC649;
   transition-duration: 0.4s;
   border: 2px solid #232424;
-  float: right;
   
 }
 button:hover {
