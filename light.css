@@ -87,3 +87,8 @@ a {
   font-weight: lighter;
 
 }
+p {
+  columns: 2;
+  column-gap: 15px;
+  column-rule: 1.3px solid #796f74;
+}
