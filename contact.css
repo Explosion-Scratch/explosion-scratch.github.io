@@ -29,11 +29,13 @@ p {
 ul {
   font-family: Montserrat !important;
 }
+
+
 body {
   width: 100%;
   height: 100wh;
   color: #fff;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23a6D5, #23d5ab);
+  background: linear-gradient(-45deg,black,#464646);
   background-size: 400% 400%;
   position: relative;
   animation: change 10s ease-in-out infinite;
