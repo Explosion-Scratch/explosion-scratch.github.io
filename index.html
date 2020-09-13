@@ -1,71 +1,143 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-	<link rel="stylesheet" href="index.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>--Explosion-- | Home</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<link rel="icon" href="logo.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
 </head>
 
-<!-- Header -->
+<body>
 
-<div class="header" id="stickyheader">
-		<link rel="stylesheet" href="header.css">
-		<img src="logo.png" alt="My logo" style="padding-left: 20px; padding-right: 20px; float:left;width:30px;height:30px;">
-    </link>
-    <a href=index.html>
-      <ul>
-        <li>
-          Home
-        </li>
-      </ul>
-    </a>
-    <a href="links.html">
-      <ul>
-        <li>
-          Links
-        </li>
-      </ul>
-    </a>
-    <a href=bookmarklets.html>
-      <ul>
-        <li>
-          Bookmarklets
-        </li>
-      </ul>
-    </a>
-    <a href="about.html">
-      <ul>
-        <li>
-          About me
-        </li>
-      </ul>
-    </a>
-</div>
+	<div class="container">
 
-<!-- Content -->
-<h1>Hi there!</h1>
-<p>Welcome to my website! Thanks for checking it out! I'm working on improving it, but in the meantime here's some stuff you can look at:
-  <ul class="list">
-    <li><a href="https://scratch.mit.edu/users/--explosion--" target="_blank">My Scratch account
-    </a></li>
-    <li><a href="sites.google.com/view/explosionscratch" target="_blank">My google sites website
-    </a></li>
-    <li><a href="github.com/Explosion-Scratch" target="_blank">My GitHub account
-    </a></li>
-    <li><a href="bookmarklets.html">Bookmarklets
-    </a></li>
-  <ul>
-</p>
+		<!--────────────────Header───────────────-->
+		<header>
+			<a class="logo" href="#home">
+				<img src="logo.png" alt="--Explosion--'s' logo" />
+			</a>
+			<nav>
+				<ul class="nav-bar">
+					<div class="bg"></div>
+					<li><a class="nav-link active" href="#home">Home</a></li>
+					<li><a class="nav-link" href="#projects">Projects</a></li>
+					<li><a class="nav-link" href="#contact">Contact</a></li>
+				</ul>
 
+				<div class="hamburger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!--─────────────────Home────────────────-->
+			<div id="home">
+				<div class="filter"></div>
+				<section class="intro">
+					<h3>--Explosion--
+						<hr>
+					</h3>
+					<p>Hi there! Welcome to my website!</p>
+					<p>I am a 14 year old coder, guitarist, 3d artist and an avid reader! In my free time I code stuff mainly in python or blender but also sometimes on scratch or in HTML/CSS/JS.</p>
 
-<!-- Script to hold the header still -->
-<script>
-window.onscroll = function() {myFunction()};
+					<!--────social media links─────-->
 
-var header = document.getElementById("stickyheader");
-var sticky = header.offsetTop;
+					<div class="social-media">
+						<a href="#" target="_blank"><i class="iconify" data-icon="simple-icons:scratch" data-inline="false"></i></a>
+						<a href="https://github.com/explosion-scratch" target="_blank"><i class='fab fa-github'></i></a>
+            <a href="mailto:explosionscratch@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            <a href="blender.org"><span class="iconify" data-icon="cib:blender" data-inline="false"></span></a>
+					</div>
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
+				</section>
+			</div>
+
+			<!--───────────────Projects───────────────-->
+			<div id="projects">
+				<h3>My Projects.
+					<hr>
+				</h3>
+				<p>Here are some of my projects, you may like.</p>
+				<div class="work-box">
+					<div class="work">
+						<!--───────────────card───────────────-->
+						<div class="card">
+							<img class="work-img" src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
+							<a href="" target="_blank">
+								<!--Link to project-->
+								<div class="work-content">My scratch account.</div>
+							</a>
+						</div>
+						<div class="card">
+							<img class="work-img" src="https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80">
+							<a href="" target="_blank">
+								<!--Link to project-->
+								<div class="work-content">ScratchAddons. A browser extension I'm working on.</div>
+							</a>
+						</div>
+						<div class="card">
+							<img class="work-img" src="https://images.unsplash.com/photo-1485815457792-d1a966f9bde0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+							<a href="" target="_blank">
+								<!--Link to project-->
+								<div class="work-content">My repl.it account. That's where I make lots of python stuff.</div>
+							</a>
+						</div>
+						<div class="card">
+							<img class="work-img" src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+							<a href="" target="_blank">
+								<!--Link to project-->
+								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
+							</a>
+						</div>
+						<div class="card">
+							<img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
+							<a href="" target="_blank">
+								<!--Link to project-->
+								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
+							</a>
+						</div>
+						<div class="card">
+							<img class="work-img" src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+							<a href="" target="_blank">
+								<!--Link to project-->
+								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--──────────────Contact────────────────-->
+			<div id="contact">
+				<!--────social media links─────-->
+				<h3>Contact.
+					<hr>
+				</h3>
+				<p>Feel free to contact me on my social media.</p>
+				<div class="social-media">
+            <a href="#" target="_blank"><i class="iconify" data-icon="simple-icons:scratch" data-inline="false"></i></a>
+						<a href="https://github.com/explosion-scratch" target="_blank"><i class='fab fa-github'></i></a>
+            <a href="mailto:explosionscratch@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            <a href="blender.org"><span class="iconify" data-icon="cib:blender" data-inline="false"></span></a>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<a href="#contact" target="_blank">Contact me</a>
+      <a href="#projects">Projects</a>
+      <a href="#home">Home</a>
+		</footer>
+
+	</div>
+</body>
+
+</html>
