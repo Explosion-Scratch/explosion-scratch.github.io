@@ -4,7 +4,7 @@
     position: relative;
 }
 
-
+ 
 /*== common styles for both parts of tool tip ==*/
 #tool::before,
 #tool::after {
