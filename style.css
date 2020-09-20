@@ -85,7 +85,16 @@ body::-webkit-scrollbar-thumb {
 	background-color: var(--accents-disabled);
 	border-radius: 20px;
 }
-
+details {
+  border-radius: 5px;
+  background: var(--accents);
+  margin: 5px;
+  padding: 0px ;
+}
+summary {
+  background: var(--accents-disabled);
+  padding: 5px;
+}
 /*---------------------------- \
 | Links                        |
 \-----------------------------*/
