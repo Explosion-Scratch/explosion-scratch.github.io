@@ -1,143 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+  <link rel='stylesheet' href='Prism/prism.css'>
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js">
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 	<title>--Explosion-- | Home</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-	<link rel="icon" href="logo.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="script.js"></script>
 </head>
 
 <body>
-
-	<div class="container">
-
-		<!--────────────────Header───────────────-->
+	<div class="header-container">
 		<header>
-			<a class="logo" href="#home">
-				<img src="logo.png" alt="--Explosion--'s' logo" />
-			</a>
-			<nav>
-				<ul class="nav-bar">
-					<div class="bg"></div>
-					<li><a class="nav-link active" href="#home">Home</a></li>
-					<li><a class="nav-link" href="#projects">Projects</a></li>
-					<li><a class="nav-link" href="#contact">Contact</a></li>
-				</ul>
-
-				<div class="hamburger">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
+			<div class="heading">
+				<div class="container">
+					<h1>--Explosion--</h1>
 				</div>
-			</nav>
+			</div>
+
+			<div class="menu-items">
+				<div class="container">
+					<div class="menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html#contact">Contact</a></li>
+							<li><a href="bookmarklets.html">Bookmarklets</a></li>
+							<li><a href="projects.html">My projects</a></li>
+						</ul>
+					</div>
+					<div class="social">
+						<ul>
+							<li class="search-icon-desktop"><i class="fas fa-search"></i></li>
+							<li><a href="mailto:explosion-scratch@gmail.com"><span class="iconify" data-icon="clarity:email-solid" data-inline="false"></span></a></li>
+							<li><a href="https://github.com/explosion-scratch"><span class="iconify" data-icon="bytesize:github" data-inline="false"></span></i></a></li>
+							<li><a href="https://scratch.mit.edu/users/--explosion--"><span class="iconify" data-icon="simple-icons:scratch" data-inline="false"></span></a></li>
+						</ul>
+					</div>
+
+					<div class="searchbox-desktop">
+						<form id="Search">
+							<input target="_blank_" id="Text_Search" type="text" placeholder="Search Here...">
+						</form>
+					</div>
+				</div>
+			</div>
 		</header>
-		<main>
-			<!--─────────────────Home────────────────-->
-			<div id="home">
-				<div class="filter"></div>
-				<section class="intro">
-					<h3>--Explosion--
-						<hr>
-					</h3>
-					<p>Hi there! Welcome to my website!</p>
-					<p>I am a 14 year old coder, guitarist, 3d artist and an avid reader! In my free time I code stuff mainly in python or blender but also sometimes on scratch or in HTML/CSS/JS.</p>
-
-					<!--────social media links─────-->
-
-					<div class="social-media">
-						<a href="#" target="_blank"><i class="iconify" data-icon="simple-icons:scratch" data-inline="false"></i></a>
-						<a href="https://github.com/explosion-scratch" target="_blank"><i class='fab fa-github'></i></a>
-            <a href="mailto:explosionscratch@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-            <a href="blender.org"><span class="iconify" data-icon="cib:blender" data-inline="false"></span></a>
-					</div>
-
-				</section>
-			</div>
-
-			<!--───────────────Projects───────────────-->
-			<div id="projects">
-				<h3>My Projects.
-					<hr>
-				</h3>
-				<p>Here are some of my projects, you may like.</p>
-				<div class="work-box">
-					<div class="work">
-						<!--───────────────card───────────────-->
-						<div class="card">
-							<img class="work-img" src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
-							<a href="" target="_blank">
-								<!--Link to project-->
-								<div class="work-content">My scratch account.</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img" src="https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80">
-							<a href="" target="_blank">
-								<!--Link to project-->
-								<div class="work-content">ScratchAddons. A browser extension I'm working on.</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img" src="https://images.unsplash.com/photo-1485815457792-d1a966f9bde0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-							<a href="" target="_blank">
-								<!--Link to project-->
-								<div class="work-content">My repl.it account. That's where I make lots of python stuff.</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img" src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-							<a href="" target="_blank">
-								<!--Link to project-->
-								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
-							<a href="" target="_blank">
-								<!--Link to project-->
-								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img" src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-							<a href="" target="_blank">
-								<!--Link to project-->
-								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--──────────────Contact────────────────-->
-			<div id="contact">
-				<!--────social media links─────-->
-				<h3>Contact.
-					<hr>
-				</h3>
-				<p>Feel free to contact me on my social media.</p>
-				<div class="social-media">
-            <a href="#" target="_blank"><i class="iconify" data-icon="simple-icons:scratch" data-inline="false"></i></a>
-						<a href="https://github.com/explosion-scratch" target="_blank"><i class='fab fa-github'></i></a>
-            <a href="mailto:explosionscratch@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-            <a href="blender.org"><span class="iconify" data-icon="cib:blender" data-inline="false"></span></a>
-				</div>
-			</div>
-
-		</main>
-		<footer class="footer">
-			<a href="#contact" target="_blank">Contact me</a>
-      <a href="#projects">Projects</a>
-      <a href="#home">Home</a>
-		</footer>
-
 	</div>
-</body>
+	<div class="mobile-header">
+		<header>
+			<div class="menu-icon" onclick='menu(this)'>
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div class="heading">
+				<h1>--Explosion--</h1>
+			</div>
+			<div class="search-icon">
+				<i class="fas fa-search"></i>
+				<i class="fas fa-times"></i>
+			</div>
+		</header>
+	</div>
 
+	<div class="mobile-menu-items">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="bookmarklets.html">Bookmarklets</a></li>
+      <li><a href="projects.html">My projects</a></li>
+		</ul>
+	</div>
+
+	<div class="searchbox-mobile">
+		<form id="Mobile_Search">
+			<input target="_blank_" id="Mobile_Text_Search" type="text" placeholder="Search Here...">
+		</form>
+	</div>
+	<button class="dark-button" onclick='DarkMode()'><img class="dark-image" src="Images/Dark_Mode.svg"></button>
+	<!-- At this point the html tag and the body tag still are not closed. -->
+	<main>
+		<div class="page-content">
+			<div class="container">
+			</div>
+			<h1>Hi!</h1>
+			<p>Hi there! Welcome to my website! I am a 14 year old coder, guitarist and an avid reader! I really like to make stuff <a href="https://scratch.mit.edu/users/--explosion--">on scratch</a> and I like to code a bunch of 3d stuff in a software called <a href="https://blender.org">Blender</a>. Recently I have moved a way from scratch a little bit and worked more on coding in python and HTML/CSS/JavaScript. You can find my projects over <a href="https://github.com/explosion-scratch">on my GitHub account</a>. In my spare time I like to code, read, play guitar, and.... Code more. 🤦 Right now I am working with a few other scratchers to code an amaging (<i>okay</i>, of course I'd think that) browser extension. It pretty much gives you scratch superpowers! This includes searching blocks, seeing how much a project is loaded, viewing deleted comments and much more! You can check that out over on the <a href="https://explosion-scratch.github.io/scratchaddons.github.io">ScratchAddons official website</a> or on the <a href="https://github.com/scratchaddons/scratchaddons">GitHub repository</a> for it.
+			</p>
+			<h1>Contact me</h1><a name='contact'/>
+			<p>Feel free to contact me through <a id="link" href="mailto: explosionscratch@gmail.com">email</a>, on my <a href="https://github.com/explosion-scratch">GitHub</a> account or on <a href="https://scratch.mit.edu/users/--explosion--">Scratch</a>.</p><br>
+			<details>
+				<summary>More</summary>
+				<p>Testing this out, it's pretty cool for just HTML, right?!</p>
+			</details>
+		</div>
+		</div>
+	</main>
+</body>
 </html>
+<script src="main.js"></script>
+<script src="Prism/prism.js"></script>
