@@ -48,6 +48,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	transition: color, background-color 0.5s;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -57,7 +58,9 @@ body {
 	color: var(--text);
 	background: var(--background);
 }
-
+span {
+  z-index: -1;
+}
 p {
 	margin: 24px 0;
 }
@@ -83,6 +86,49 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 20px;
 }
 
+details {
+  border-radius: 5px;
+  background: var(--accents);
+  margin: 5px;
+  padding: 5px;
+}
+details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--accents-disabled);
+  padding: 10px 10px 0;
+  margin: 1em 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+details[open] {
+  padding: 10px;
+}
+
+details > :last-child {
+  margin-bottom: 0;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
+}
+
+summary {
+  display: list-item;
+  background-color: var(--accents);
+  padding: 10px;
+  margin: -10px -10px 0;
+}
+
+details > :not(summary) {
+  margin-top: 0;
+}
+
+summary::-webkit-details-marker {
+  color: var(--text-main);
+}
 /*---------------------------- \
 | Links                        |
 \-----------------------------*/
@@ -142,8 +188,25 @@ body::-webkit-scrollbar-thumb {
 .dark-mode .dark-image {
 	filter: invert(100%);
 }
+/*---------------------------- \
+| Buttons                       |
+\-----------------------------*/
 
-
+#button {
+   color: var(--accents-disabled);
+   background-color: transparent;
+   border: 1px solid var(--accents);
+   border-radius: 4px;
+   padding: 0 15px;
+   cursor: pointer;
+   height: 32px;
+   font-size: 14px;
+   transition: all 0.2s ease-in-out;
+}
+#button:hover {
+  box-shadow: 1px 1px var(--accents), 2px 2px var(--accents-disabled), 3px 3px #53a7ea;
+  transform: translateX(-3px);
+}
 /*---------------------------- \
 | Icons                         |
 \-----------------------------*/
@@ -364,7 +427,7 @@ main h2 {
 		display: block;
 		position: fixed;
 		width: 100%;
-		z-index: 100;
+		z-index: 1000;
 		background: var(--background);
 	}
 
