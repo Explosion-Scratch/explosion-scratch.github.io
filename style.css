@@ -58,7 +58,9 @@ body {
 	color: var(--text);
 	background: var(--background);
 }
-
+span {
+  z-index: -1;
+}
 p {
 	margin: 24px 0;
 }
@@ -365,7 +367,7 @@ main h2 {
 		display: block;
 		position: fixed;
 		width: 100%;
-		z-index: 100;
+		z-index: 1000;
 		background: var(--background);
 	}
 
