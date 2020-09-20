@@ -89,11 +89,44 @@ details {
   border-radius: 5px;
   background: var(--accents);
   margin: 5px;
-  padding: 0px ;
-}
-summary {
-  background: var(--accents-disabled);
   padding: 5px;
+}
+details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--accents-disabled);
+  padding: 10px 10px 0;
+  margin: 1em 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+details[open] {
+  padding: 10px;
+}
+
+details > :last-child {
+  margin-bottom: 0;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
+}
+
+summary {
+  display: list-item;
+  background-color: var(--accents);
+  padding: 10px;
+  margin: -10px -10px 0;
+}
+
+details > :not(summary) {
+  margin-top: 0;
+}
+
+summary::-webkit-details-marker {
+  color: var(--text-main);
 }
 /*---------------------------- \
 | Links                        |
