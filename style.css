@@ -85,6 +85,7 @@ body::-webkit-scrollbar-thumb {
 	background-color: var(--accents-disabled);
 	border-radius: 20px;
 }
+
 details {
   border-radius: 5px;
   background: var(--accents);
