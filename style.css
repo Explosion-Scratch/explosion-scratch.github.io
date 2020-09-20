@@ -145,8 +145,25 @@ body::-webkit-scrollbar-thumb {
 .dark-mode .dark-image {
 	filter: invert(100%);
 }
+/*---------------------------- \
+| Buttons                       |
+\-----------------------------*/
 
-
+button {
+   color: var(--accents-disabled);
+   background-color: transparent;
+   border: 1px solid var(--accents);
+   border-radius: 4px;
+   padding: 0 15px;
+   cursor: pointer;
+   height: 32px;
+   font-size: 14px;
+   transition: all 0.2s ease-in-out;
+}
+button:hover {
+  box-shadow: 1px 1px var(--accents), 2px 2px var(--accents-disabled), 3px 3px #53a7ea;
+  transform: translateX(-3px);
+}
 /*---------------------------- \
 | Icons                         |
 \-----------------------------*/
