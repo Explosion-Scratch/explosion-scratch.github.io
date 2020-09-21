@@ -103,6 +103,17 @@ javascript: (function() {
                     }
 })()
 }</code></pre>
+<h3>Search the Scratch Forums</h3>
+<pre><code class="language-js">javascript: (function () {
+  var targetUrl =
+    "https://cse.google.com/cse?cx=004750568343869157003:8dr5wusgvjk&q=";
+  new Promise((setQuery) => {
+    var input = window.prompt("What are you searching for?");
+    if (input) setQuery(input);
+  }).then((query) => window.open(targetUrl + query));
+})();</pre>
+<pre><code class="language-js"></pre>
+<pre><code class="language-js"></pre>
 		</div>
 	</main>
 </body>
