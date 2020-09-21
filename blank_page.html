@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <link rel='stylesheet' href='Prism/prism.css'>
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js">
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,6 +13,7 @@
 	<link rel="stylesheet" href="style.css">
 	<title>--Explosion-- | Home</title>
 </head>
+
 <body>
 	<div class="header-container">
 		<header>
@@ -19,15 +22,14 @@
 					<h1>--Explosion--</h1>
 				</div>
 			</div>
-
+<!-- This section will need to be changed if copy pasted to another page, along with the one with the mobile menu items. -->
 			<div class="menu-items">
 				<div class="container">
 					<div class="menu">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="htttps://scratch.mit.edu/users/--explosion--">Scratch</a></li>
-							<li><a href="https://github.com/explosion-scratch">GitHub</a></li>
-							<li><a href="mailto:explosionscratch@gmail.com">Email</a></li>
+							<li><a href="index.html#home">Home</a></li>
+							<li><a href="index.html#contact">Contact</a></li>
+							<li><a href="projects.html">Projects</a></li>
 						</ul>
 					</div>
 					<div class="social">
@@ -50,8 +52,10 @@
 	</div>
 	<div class="mobile-header">
 		<header>
-			<div class="menu-icon">
-				<i class="fas fa-bars"></i>
+			<div class="menu-icon" onclick='menu(this)'>
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
 			</div>
 			<div class="heading">
 				<h1>--Explosion--</h1>
@@ -65,10 +69,9 @@
 
 	<div class="mobile-menu-items">
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="htttps://scratch.mit.edu/users/--explosion--">Scratch</a></li>
-			<li><a href="https://github.com/explosion-scratch">GitHub</a></li>
-			<li><a href="mailto:explosionscratch@gmail.com">Email</a></li>
+			<li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="projects.html">Projects</a></li>
 		</ul>
 	</div>
 
@@ -77,16 +80,15 @@
 			<input target="_blank_" id="Mobile_Text_Search" type="text" placeholder="Search Here...">
 		</form>
 	</div>
-	<button class="dark-button" onclick='DarkMode()'><img class="dark-image" src="Images/Dark_Mode.svg" style="width: 20px; height: 20px;"></button>
-  <!-- At this point the html tag and the body tag still are not closed. -->
-	<main>
+	<button class="dark-button" onclick='DarkMode()'><img class="dark-image" src="Images/Dark_Mode.svg"></button>
+	<!-- At this point the html tag and the body tag still are not closed. -->
+  
+	<main><a name='home'></a>
 		<div class="page-content">
-			<div class="container">
-        <!-- Page content goes here -->
-			</div>
+      <!--Code goes here -->
 		</div>
 	</main>
 </body>
-
 </html>
 <script src="main.js"></script>
+<script src="Prism/prism.js"></script>
