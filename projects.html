@@ -112,7 +112,10 @@ javascript: (function() {
     if (input) setQuery(input);
   }).then((query) => window.open(targetUrl + query));
 })();</pre>
-<pre><code class="language-js"></pre>
+<h3>Open the current scratch project in <a href='forkphorus.github.io'>forkphorus</a></h3>
+<pre><code class="language-js">javascript: url = window.location.href;
+window.open("https://forkphorus.github.io/app.html?id=" + url.substring(33))
+</pre>
 <pre><code class="language-js"></pre>
 		</div>
 	</main>
