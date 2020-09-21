@@ -542,7 +542,7 @@ main h2 {
 
 /* Menu icon */
 * {
-	--menu-size: 3px;
+	--menu-size: 30px;
 }
 
 .bar1,
@@ -567,5 +567,5 @@ main h2 {
 }
 
 .menu .bar2 {
-	transform: rotate(45deg) translate(calc(var(--menu-size)*0.2), calc(var(--menu-size)*0.2));
+	transform: rotate(45deg) translate(calc(var(--menu-size)*-.35), calc(var(--menu-size)*-.35));
 }
