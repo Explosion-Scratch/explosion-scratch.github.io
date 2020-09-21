@@ -563,7 +563,7 @@ main h2 {
 
 .menu .bar3 {
 	opacity: 1;
-  transform: translate(0, calc(var(--menu-size)*3)) rotate(180deg) 
+  transform: translate(0, calc(var(--menu-size)*1)) rotate(180deg) 
 }
 
 .menu .bar2 {
