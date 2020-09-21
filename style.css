@@ -479,7 +479,6 @@ main h2 {
 		opacity: 0;
 		transition: all .4s;
 	}
-
 	.mobile-menu-items ul {
 		margin-top: 64px;
 		list-style: none;
