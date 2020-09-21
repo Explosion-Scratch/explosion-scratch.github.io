@@ -1,98 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <link rel='stylesheet' href='Prism/prism.css'>
-	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js">
-	</script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<title>--Explosion-- | Home</title>
-</head>
-
-<body>
-	<div class="header-container">
-		<header>
-			<div class="heading">
-				<div class="container">
-					<h1>--Explosion--</h1>
-				</div>
-			</div>
-<!-- This section will need to be changed if copy pasted to another page, along with the one with the mobile menu items. -->
-			<div class="menu-items">
-				<div class="container">
-					<div class="menu">
-						<ul>
-							<li><a href="index.html#home">Home</a></li>
-							<li><a href="index.html#contact">Contact</a></li>
-							<li><a href="projects.html">Projects</a></li>
-						</ul>
-					</div>
-					<div class="social">
-						<ul>
-							<li class="search-icon-desktop"><i class="fas fa-search"></i></li>
-							<li><a href="mailto:explosion-scratch@gmail.com"><span class="iconify" data-icon="clarity:email-solid" data-inline="false"></span></a></li>
-							<li><a href="https://github.com/explosion-scratch"><span class="iconify" data-icon="bytesize:github" data-inline="false"></span></i></a></li>
-							<li><a href="https://scratch.mit.edu/users/--explosion--"><span class="iconify" data-icon="simple-icons:scratch" data-inline="false"></span></a></li>
-						</ul>
-					</div>
-
-					<div class="searchbox-desktop">
-						<form id="Search">
-							<input target="_blank_" id="Text_Search" type="text" placeholder="Search Here...">
-						</form>
-					</div>
-				</div>
-			</div>
-		</header>
-	</div>
-	<div class="mobile-header">
-		<header>
-			<div class="menu-icon" onclick='menu(this)'>
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-			<div class="heading">
-				<h1>--Explosion--</h1>
-			</div>
-			<div class="search-icon">
-				<i class="fas fa-search"></i>
-				<i class="fas fa-times"></i>
-			</div>
-		</header>
-	</div>
-
-	<div class="mobile-menu-items">
-		<ul>
-			<li><a href="index.html#home">Home</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-      <li><a href="projects.html">Projects</a></li>
-		</ul>
-	</div>
-
-	<div class="searchbox-mobile">
-		<form id="Mobile_Search">
-			<input target="_blank_" id="Mobile_Text_Search" type="text" placeholder="Search Here...">
-		</form>
-	</div>
-	<button class="dark-button" onclick='DarkMode()'><img class="dark-image" src="Images/Dark_Mode.svg"></button>
-	<!-- At this point the html tag and the body tag still are not closed. -->
-  
-	<main><a name='home'></a>
-		<div class="page-content">
-      <h1>Projects</h1>
-      <p>Thanks for looking at my projects! I mainly code on GitHub but that used to be different! I used to code a lot on scratch, nowdays though, I maily code on GitHub. I also made some cool browser bookmarklets that you can use!</p>
-      <button id='button' href='https://scratch.mit.edu/users/--explosion--'>Check out my scratch projects!</button><button id='button' href='https://github.com/explosion-scratch'>Check out my GitHub projects!</button>
-      <h2>Bookmarklets</h2>
-      <p>Bookmarklets have been a great way for me to learn JavaScript. Some of the bookmarklets I have made are listed here!</p>
-      <h3>Delete all cookies stored on the current page</h3>
-      <p>This deletes all the cookies stored by the current page! It's super helpful for quickly signing out of sites, or for sites that use cookies to limit the number of times you can use their services.</p>
-      <pre><code class="language-js">
+   <head>
+      <link rel='stylesheet' href='Prism/prism.css'>
+      <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <title>--Explosion-- | Home</title>
+   </head>
+   <body>
+      <div class="header-container">
+         <header>
+            <div class="heading">
+               <div class="container">
+                  <h1>--Explosion--</h1>
+               </div>
+            </div>
+            <!-- This section will need to be changed if copy pasted to another page, along with the one with the mobile menu items. -->
+            <div class="menu-items">
+               <div class="container">
+                  <div class="menu">
+                     <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                     </ul>
+                  </div>
+                  <div class="social">
+                     <ul>
+                        <li class="search-icon-desktop"><i class="fas fa-search"></i></li>
+                        <li><a href="mailto:explosion-scratch@gmail.com"><span class="iconify" data-icon="clarity:email-solid" data-inline="false"></span></a></li>
+                        <li><a href="https://github.com/explosion-scratch"><span class="iconify" data-icon="bytesize:github" data-inline="false"></span></i></a></li>
+                        <li><a href="https://scratch.mit.edu/users/--explosion--"><span class="iconify" data-icon="simple-icons:scratch" data-inline="false"></span></a></li>
+                     </ul>
+                  </div>
+                  <div class="searchbox-desktop">
+                     <form id="Search">
+                        <input target="_blank_" id="Text_Search" type="text" placeholder="Search Here...">
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </header>
+      </div>
+      <div class="mobile-header">
+         <header>
+            <div class="menu-icon" onclick='menu(this)'>
+               <div class="bar1"></div>
+               <div class="bar2"></div>
+               <div class="bar3"></div>
+            </div>
+            <div class="heading">
+               <h1>--Explosion--</h1>
+            </div>
+            <div class="search-icon">
+               <i class="fas fa-search"></i>
+               <i class="fas fa-times"></i>
+            </div>
+         </header>
+      </div>
+      <div class="mobile-menu-items">
+         <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+         </ul>
+      </div>
+      <div class="searchbox-mobile">
+         <form id="Mobile_Search">
+            <input target="_blank_" id="Mobile_Text_Search" type="text" placeholder="Search Here...">
+         </form>
+      </div>
+      <button class="dark-button" onclick='DarkMode()'><img class="dark-image" src="Images/Dark_Mode.svg"></button>
+      <!-- At this point the html tag and the body tag still are not closed. -->
+      <main>
+         <a name='home'></a>
+         <div class="page-content">
+            <h1>Projects</h1>
+            <p>Thanks for looking at my projects! I mainly code on GitHub but that used to be different! I used to code a lot on scratch, nowdays though, I maily code on GitHub. I also made some cool browser bookmarklets that you can use!</p>
+            <button id='button' href='https://scratch.mit.edu/users/--explosion--'>Check out my scratch projects!</button><button id='button' href='https://github.com/explosion-scratch'>Check out my GitHub projects!</button>
+            <h2>Bookmarklets</h2>
+            <p>Bookmarklets have been a great way for me to learn JavaScript. Some of the bookmarklets I have made are listed here!</p>
+            <h3>Delete all cookies stored on the current page</h3>
+            <p>This deletes all the cookies stored by the current page! It's super helpful for quickly signing out of sites, or for sites that use cookies to limit the number of times you can use their services.</p>
+            <pre><code class="language-js">
 javascript: (function() {
     C = document.cookie.split("; ");
     for (d = "." + location.host; d; d = ("" + d).substr(1).match(/\..*$/))
@@ -104,9 +98,9 @@ javascript: (function() {
                     }
 })()
 }</code></pre>
-<h3>Search the Scratch Forums</h3>
-<p>This utilizes a google custom search I made to search the scratch forums for anything! It works super well and is very helpful! Also, it opens in a new window so you don't leave the current page!</p>
-<pre><code class="language-js">javascript: (function () {
+            <h3>Search the Scratch Forums</h3>
+            <p>This utilizes a google custom search I made to search the scratch forums for anything! It works super well and is very helpful! Also, it opens in a new window so you don't leave the current page!</p>
+            <pre><code class="language-js">javascript: (function () {
   var targetUrl =
     "https://cse.google.com/cse?cx=004750568343869157003:8dr5wusgvjk&q=";
   new Promise((setQuery) => {
@@ -114,30 +108,30 @@ javascript: (function() {
     if (input) setQuery(input);
   }).then((query) => window.open(targetUrl + query));
 })();</code></pre>
-<h3>Open the current scratch project in <a href='forkphorus.github.io'>forkphorus</a></h3>
-<p>Forkphorus is an awesome scratch project player made by GarboMuffin on scratch. It compiles the scratch project to JavaScript so that it can run amazingly smoothly.</p>
-<pre><code class="language-js">javascript: url = window.location.href;
+            <h3>Open the current scratch project in <a href='forkphorus.github.io'>forkphorus</a></h3>
+            <p>Forkphorus is an awesome scratch project player made by GarboMuffin on scratch. It compiles the scratch project to JavaScript so that it can run amazingly smoothly.</p>
+            <pre><code class="language-js">javascript: url = window.location.href;
 window.open("https://forkphorus.github.io/app.html?id=" + url.substring(33))
 </code>
 </pre>
-<h3>Skip the YouTube ad that's playing</h3>
-<p>When an ad starts playing, just click this and YouTube will skip it! Be carefull not to click it on the actual video though, it'll speed up al the way through it!</p>
-<pre><code class="language-js">javascript:document.querySelector('video').currentTime=document.querySelector('video').duration
+            <h3>Skip the YouTube ad that's playing</h3>
+            <p>When an ad starts playing, just click this and YouTube will skip it! Be carefull not to click it on the actual video though, it'll speed up al the way through it!</p>
+            <pre><code class="language-js">javascript:document.querySelector('video').currentTime=document.querySelector('video').duration
 </code></pre>
-<h3>Set an animated thumbnail for a scratch project</h3>
-<p>Thanks to World_Languages for the actual code for this.</p>
-<pre><code class="language-js">javascript: x = document.createElement("script");
+            <h3>Set an animated thumbnail for a scratch project</h3>
+            <p>Thanks to World_Languages for the actual code for this.</p>
+            <pre><code class="language-js">javascript: x = document.createElement("script");
 x.src = "//is.gd/thumb2";
 void document.getElementsByTagName("head")[0].appendChild(x);
 </code></pre>
-<h3>Edit the current webpage! (Better than inspect element)</h3>
-<p>This literally lets you edit the webpage as if you just put it into microsoft word lol. (Also links still click and stuff, so that's sort of tricky!)</p>
-<pre><code class="language-js">javascript: document.body.contentEditable = 'true';
+            <h3>Edit the current webpage! (Better than inspect element)</h3>
+            <p>This literally lets you edit the webpage as if you just put it into microsoft word lol. (Also links still click and stuff, so that's sort of tricky!)</p>
+            <pre><code class="language-js">javascript: document.body.contentEditable = 'true';
 document.designMode = 'on';
 void 0</code></pre>
-<h3>Enable text selection</h3>
-<p>Don't you just hate it when websites don't let you copy anything!</p>
-<pre><code class="language-js">javascript: (function() {
+            <h3>Enable text selection</h3>
+            <p>Don't you just hate it when websites don't let you copy anything!</p>
+            <pre><code class="language-js">javascript: (function() {
     function R(a) {
         ona = "on" + a;
         if (window.addEventListener) window.addEventListener(a, function(e) {
@@ -148,15 +142,15 @@ void 0</code></pre>
         if (document.body) document.body[ona] = null;
     }
     R("click");</code></pre>
-<h3>Search for the current webpage in the <a href='https://archive.org/web'>WayBack machine</a></h3>
-<p>We've all encountered broken links. This fixes it suer quickly!</p>
-<pre><code class="language-js">javascript: void(location.href = 'http://web.archive.org/web/*/' + escape(location.href));
+            <h3>Search for the current webpage in the <a href='https://archive.org/web'>WayBack machine</a></h3>
+            <p>We've all encountered broken links. This fixes it suer quickly!</p>
+            <pre><code class="language-js">javascript: void(location.href = 'http://web.archive.org/web/*/' + escape(location.href));
 </code></pre>
-<pre><code class="language-js"></code></pre>
-<pre><code class="language-js"></code></pre>
-		</div>
-	</main>
-</body>
+            <pre><code class="language-js"></code></pre>
+            <pre><code class="language-js"></code></pre>
+         </div>
+      </main>
+   </body>
 </html>
 <script src="main.js"></script>
 <script src="Prism/prism.js"></script>
