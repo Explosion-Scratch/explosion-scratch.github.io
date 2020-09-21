@@ -567,5 +567,5 @@ main h2 {
 }
 
 .menu .bar2 {
-	transform: rotate(45deg) translate(calc(var(--menu-size)*-.0), calc(var(--menu-size)*-.3));
+	transform: rotate(45deg) translate(calc(var(--menu-size)*-.5), calc(var(--menu-size)*-.5));
 }
