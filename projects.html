@@ -89,6 +89,77 @@
       <p>Thanks for looking at my projects! I mainly code on GitHub but that used to be different! I used to code a lot on scratch, nowdays though, I maily code on GitHub. I also made some cool browser bookmarklets that you can use!</p>
       <button id='button' href='https://scratch.mit.edu/users/--explosion--'>Check out my scratch projects!</button><button id='button' href='https://github.com/explosion-scratch'>Check out my GitHub projects!</button>
       <h2>Bookmarklets</h2>
+      <pre><code class="language-js">const headerContainer = document.querySelector(".header-container");
+const header = document.querySelector("header");
+
+const menuIcon = document.querySelector(".menu-icon");
+const mobileMenuItems = document.querySelector(".mobile-menu-items");
+
+const mobileSearchIcon = document.querySelector(".mobile-header .search-icon");
+const searchBoxMobile = document.querySelector(".searchbox-mobile");
+
+const timesIcon = document.querySelector(".search-icon .fa-times");
+const searchIcon = document.querySelector(".search-icon .fa-search");
+
+const searchIconDesktop = document.querySelector(".social .search-icon-desktop");
+const searchBoxDesktop = document.querySelector(".searchbox-desktop");
+
+// Scroll
+
+window.addEventListener("scroll", function() {
+
+	if (window.pageYOffset > 300) {
+		header.classList.add("scrolled");
+		headerContainer.classList.add("fixed");
+	} else {
+		header.classList.remove("scrolled");
+		headerContainer.classList.remove("fixed");
+	}
+})
+
+// Desktop Search
+
+searchIconDesktop.addEventListener("click", function() {
+	searchBoxDesktop.classList.toggle("active");
+})
+
+// Mobile Menu 
+
+menuIcon.addEventListener("click", function() {
+	mobileMenuItems.classList.toggle("active");
+})
+
+// Mobile Search
+
+mobileSearchIcon.addEventListener("click", function() {
+	searchBoxMobile.classList.toggle("active");
+
+	if (searchBoxMobile.classList.contains("active")) {
+		searchIcon.style.display = "none";
+		timesIcon.style.display = "block";
+	} else {
+		searchIcon.style.display = "block";
+		timesIcon.style.display = "none";
+	}
+})
+
+function DarkMode() {
+	var element = document.body;
+	element.classList.toggle("dark-mode");
+}
+
+document.getElementById('Search').onsubmit = function() {
+	window.location = 'http://www.google.com/search?q=site:explosionscratc.repl.co ' + document.getElementById('Text_Search').value;
+	return false;
+}
+document.getElementById('Mobile_Search').onsubmit = function() {
+	window.location = 'http://www.google.com/search?q=site:explosionscratc.repl.co ' + document.getElementById('Mobile_Text_Search').value;
+	return false;
+}
+
+function menu(x) {
+	x.classList.toggle("menu");
+}</code></pre>
 		</div>
 	</main>
 </body>
