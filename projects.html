@@ -118,14 +118,17 @@ window.open("https://forkphorus.github.io/app.html?id=" + url.substring(33))
 </code>
 </pre>
 <h3>Skip the YouTube ad that's playing</h3>
+<p>When an ad starts playing, just click this and YouTube will skip it! Be carefull not to click it on the actual video though, it'll speed up al the way through it!</p>
 <pre><code class="language-js">javascript:document.querySelector('video').currentTime=document.querySelector('video').duration
 </code></pre>
 <h3>Set an animated thumbnail for a scratch project</h3>
+<p>Thanks to World_Languages for the actual code for this.</p>
 <pre><code class="language-js">javascript: x = document.createElement("script");
 x.src = "//is.gd/thumb2";
 void document.getElementsByTagName("head")[0].appendChild(x);
 </code></pre>
 <h3>Edit the current webpage! (Better than inspect element)</h3>
+<p>This literally lets you edit the webpage as if you just put it into microsoft word lol. (Also links still click and stuff, so that's sort of tricky!)</p>
 <pre><code class="language-js">javascript: document.body.contentEditable = 'true';
 document.designMode = 'on';
 void 0</code></pre>
