@@ -89,76 +89,19 @@
       <p>Thanks for looking at my projects! I mainly code on GitHub but that used to be different! I used to code a lot on scratch, nowdays though, I maily code on GitHub. I also made some cool browser bookmarklets that you can use!</p>
       <button id='button' href='https://scratch.mit.edu/users/--explosion--'>Check out my scratch projects!</button><button id='button' href='https://github.com/explosion-scratch'>Check out my GitHub projects!</button>
       <h2>Bookmarklets</h2>
-      <pre><code class="language-js">const headerContainer = document.querySelector(".header-container");
-const header = document.querySelector("header");
-
-const menuIcon = document.querySelector(".menu-icon");
-const mobileMenuItems = document.querySelector(".mobile-menu-items");
-
-const mobileSearchIcon = document.querySelector(".mobile-header .search-icon");
-const searchBoxMobile = document.querySelector(".searchbox-mobile");
-
-const timesIcon = document.querySelector(".search-icon .fa-times");
-const searchIcon = document.querySelector(".search-icon .fa-search");
-
-const searchIconDesktop = document.querySelector(".social .search-icon-desktop");
-const searchBoxDesktop = document.querySelector(".searchbox-desktop");
-
-// Scroll
-
-window.addEventListener("scroll", function() {
-
-	if (window.pageYOffset > 300) {
-		header.classList.add("scrolled");
-		headerContainer.classList.add("fixed");
-	} else {
-		header.classList.remove("scrolled");
-		headerContainer.classList.remove("fixed");
-	}
-})
-
-// Desktop Search
-
-searchIconDesktop.addEventListener("click", function() {
-	searchBoxDesktop.classList.toggle("active");
-})
-
-// Mobile Menu 
-
-menuIcon.addEventListener("click", function() {
-	mobileMenuItems.classList.toggle("active");
-})
-
-// Mobile Search
-
-mobileSearchIcon.addEventListener("click", function() {
-	searchBoxMobile.classList.toggle("active");
-
-	if (searchBoxMobile.classList.contains("active")) {
-		searchIcon.style.display = "none";
-		timesIcon.style.display = "block";
-	} else {
-		searchIcon.style.display = "block";
-		timesIcon.style.display = "none";
-	}
-})
-
-function DarkMode() {
-	var element = document.body;
-	element.classList.toggle("dark-mode");
-}
-
-document.getElementById('Search').onsubmit = function() {
-	window.location = 'http://www.google.com/search?q=site:explosionscratc.repl.co ' + document.getElementById('Text_Search').value;
-	return false;
-}
-document.getElementById('Mobile_Search').onsubmit = function() {
-	window.location = 'http://www.google.com/search?q=site:explosionscratc.repl.co ' + document.getElementById('Mobile_Text_Search').value;
-	return false;
-}
-
-function menu(x) {
-	x.classList.toggle("menu");
+      <p>Bookmarklets have been a great way for me to learn JavaScript. Some of the bookmarklets I have made are listed here!</p>
+      <h3>Delete all cookies stored on the current page</h3>
+      <pre><code class="language-js">
+javascript: (function() {
+    C = document.cookie.split("; ");
+    for (d = "." + location.host; d; d = ("" + d).substr(1).match(/\..*$/))
+        for (sl = 0; sl < 2; ++sl)
+            for (p = "/" + location.pathname; p; p = p.substring(0, p.lastIndexOf('/')))
+                for (i in C)
+                    if (c = C[i]) {
+                        document.cookie = c + "; domain=" + d.slice(sl) + "; path=" + p.slice(1) + "/" + "; expires=" + new Date((new Date).getTime() - 1e11).toGMTString()
+                    }
+})()
 }</code></pre>
 		</div>
 	</main>
