@@ -192,7 +192,7 @@ summary::-webkit-details-marker {
 | Buttons                       |
 \-----------------------------*/
 
-#button {
+#button, #centered-button {
    color: var(--accents-disabled);
    background-color: transparent;
    border: 1px solid var(--accents);
@@ -208,8 +208,8 @@ summary::-webkit-details-marker {
   box-shadow: 1px 1px var(--accents), 2px 2px var(--accents-disabled), 3px 3px #53a7ea;
   transform: translateX(-3px);
 }
-.centered:hover {
-  transform: translateX(0px);
+#centered-button:hover {
+  box-shadow: 1px 1px var(--accents), 2px 2px var(--accents-disabled), 3px 3px #53a7ea;
 }
 /*---------------------------- \
 | Icons                         |
