@@ -479,6 +479,7 @@ main h2 {
 		opacity: 0;
 		transition: all .4s;
 	}
+
 	.mobile-menu-items ul {
 		margin-top: 64px;
 		list-style: none;
@@ -542,7 +543,7 @@ main h2 {
 
 /* Menu icon */
 * {
-	--menu-size: 4px;
+	--menu-size: 3px;
 }
 
 .bar1,
@@ -561,11 +562,11 @@ main h2 {
 }
 
 
-.menu .bar3 {
-	opacity: 1;
-  transform: translate(0, calc(var(--menu-size)*0.5));
+.menu .bar2 {
+	transform: translate(10px, 0);
+	opacity: 0;
 }
 
-.menu .bar2 {
-	transform: rotate(45deg) translate(calc(var(--menu-size)*-.5), calc(var(--menu-size)*-.5));
+.menu .bar3 {
+	transform: rotate(45deg) translate(calc(var(--menu-size)*-2), calc(var(--menu-size)*-2));
 }
