@@ -202,6 +202,7 @@ summary::-webkit-details-marker {
    height: 32px;
    font-size: 14px;
    transition: all 0.2s ease-in-out;
+   margin: 10px;
 }
 #button:hover {
   box-shadow: 1px 1px var(--accents), 2px 2px var(--accents-disabled), 3px 3px #53a7ea;
