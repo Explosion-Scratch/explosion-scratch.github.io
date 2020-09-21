@@ -129,6 +129,9 @@ details > :not(summary) {
 summary::-webkit-details-marker {
   color: var(--text-main);
 }
+h3::before, h2::before {
+  content: '/17'
+}
 /*---------------------------- \
 | Links                        |
 \-----------------------------*/
