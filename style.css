@@ -135,7 +135,8 @@ summary::-webkit-details-marker {
 .page-content a {
   position: relative;
   z-index: 1;
-	color: var(--accents)
+	color: var(--accents-disabled);
+	transition-duration: 0.5s;
 }
 .page-content a:hover {
 	color: var(--text);
