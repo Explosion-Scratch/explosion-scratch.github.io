@@ -133,23 +133,28 @@ summary::-webkit-details-marker {
 | Links                        |
 \-----------------------------*/
 .page-content a {
-	color: var(--accents-disabled);
+  position: relative;
+  z-index: 1;
 }
 
-.dark-mode .page-content a {
-	color: var(--accents)
+.page-content a::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -0.25em;
+  right: -0.25em;
+  background-color: hsla(341, 97%, 59%, 0.75);
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
 }
 
-.page-content a:hover {
-	color: var(--accents);
-	background: #73a8e459;
+.page-content a:hover::before {
+  transform: scaleX(1);
+  transform-origin: center left;
 }
-
-.dark-mode .page-content a:hover {
-	color: var(--accents-disabled);
-	background: #0067dd48;
-}
-
 /*---------------------------- \
 | Buttons                       |
 \-----------------------------*/
