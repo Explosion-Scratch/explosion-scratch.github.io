@@ -129,6 +129,10 @@ details > :not(summary) {
 summary::-webkit-details-marker {
   color: var(--text-main);
 }
+footer, footer a{
+	background-color: var(--tertiary-color);
+	color: var(--accents);
+}
 /*---------------------------- \
 | Links                        |
 \-----------------------------*/
