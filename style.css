@@ -232,9 +232,6 @@ summary::-webkit-details-marker {
 /*---------------------------- \
 | Header                       |
 \-----------------------------*/
-.mobile-menu {
-	z-index: 100;
-}
 .page-content {
 	max-width: 500px;
 	min-width: 300px;
@@ -242,7 +239,6 @@ summary::-webkit-details-marker {
 }
 
 .header-container {
-	z-index: 100;
 	position: absolute;
 	width: 100%;
 	margin-top: -200px;
@@ -401,7 +397,6 @@ header.scrolled .menu-items {
 /* Main */
 
 main {
-	z-index: 100;
 	padding: 180px 100px 0 100px;
 	line-height: 2;
 }
