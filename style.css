@@ -130,11 +130,14 @@ summary::-webkit-details-marker {
   color: var(--text-main);
 }
 footer{
+	padding: 20px;
 	background-color: var(--tertiary-color);
 }
 footer ul li, footer a{
 	color: var(--accents);
 	display: inline;
+	margin: 0 auto;
+	padding: 10px;
 }
 /*---------------------------- \
 | Links                        |
