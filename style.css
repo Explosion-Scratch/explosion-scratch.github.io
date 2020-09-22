@@ -232,6 +232,9 @@ summary::-webkit-details-marker {
 /*---------------------------- \
 | Header                       |
 \-----------------------------*/
+.mobile-menu {
+	z-index: 100;
+}
 .page-content {
 	max-width: 500px;
 	min-width: 300px;
