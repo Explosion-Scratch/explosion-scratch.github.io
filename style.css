@@ -302,9 +302,7 @@ h5 {
 }
 
 /* Header */
-.heading-container {
-	z-index: 10000;
-}
+
 header {
 	display: flex;
 	flex-direction: column;
@@ -335,6 +333,7 @@ header.scrolled .menu-items {
 .heading {
 	padding: 24px;
 	box-shadow: 0px 0px 23px 0px var(--box-shadow);
+	z-index: 100;
 }
 
 .heading h1 {
