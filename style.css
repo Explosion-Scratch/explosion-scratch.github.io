@@ -343,10 +343,13 @@ header.scrolled .menu-items {
 /* Menu Items */
 
 .menu-items {
+		z-index: 99;
+
 	background: var(--background);
 }
 
 .menu-items .container {
+	z-index: 100;
 	display: flex;
 	justify-content: space-between;
 	padding: 24px 0;
