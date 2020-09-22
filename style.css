@@ -477,6 +477,8 @@ main h2 {
 	/* Mobile menu items */
 
 	.mobile-menu-items {
+		/* This is IMPORTANT */
+		z-index: 99;
 		display: flex;
 		background: var(--background);
 		width: 100%;
