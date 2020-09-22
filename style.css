@@ -137,8 +137,11 @@ summary::-webkit-details-marker {
   z-index: 1;
 	color: var(--accents)
 }
-.page-content a:hover
+.page-content a:hover {
+	color: var(--text);
+}
 .page-content a::before {
+	opacity: .6;
   content: '';
   position: absolute;
   z-index: -1;
