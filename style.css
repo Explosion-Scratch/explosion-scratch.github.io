@@ -234,9 +234,9 @@ summary::-webkit-details-marker {
 \-----------------------------*/
 .page-content {
 	max-width: 700px;
-	min-width: 300px;
+	min-width: 400px;
 	margin: 0 auto;
-	padding: 50px;
+	padding: 10vw;
 }
 
 .header-container {
