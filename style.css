@@ -132,9 +132,9 @@ summary::-webkit-details-marker {
 footer{
 	background-color: var(--tertiary-color);
 }
-footer a {
+footer ul li, footer a{
 	color: var(--accents);
-	
+	display: inline;
 }
 /*---------------------------- \
 | Links                        |
