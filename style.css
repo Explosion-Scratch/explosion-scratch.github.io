@@ -585,18 +585,13 @@ main h2 {
 		font-family: "Raleway", sans-serif;
 		font-size: 16px;
 		border: none;
-		background-color: var(--background)
-	}
-	.searchbox-mobile::after {
-		content: '';
-		display: block;
-		height: 3px;
-		width: 50%;
-		background-color: red;
-		z-index: 50;
+		background-color: var(--background);
+		caret-color: var(--accents);
 	}
 	
+	
 	.searchbox-mobile input[type="text"]:focus {
+		color: transparent;
 		outline: none;
 	}
 
