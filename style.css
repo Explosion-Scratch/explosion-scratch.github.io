@@ -24,7 +24,18 @@
 	--text: white;
 	--box-shadow: #ffffff75;
 }
-
+/*---------------------------- \
+| z-indexing                   |
+\-----------------------------*/
+.searchbox-mobile {
+	z-index: 0;
+}
+.mobile-menu-items {
+	z-index: 15;
+}
+.mobile-header {
+	z-index: 20;
+}
 /*---------------------------- \
 | Main element styling         |
 \-----------------------------*/
@@ -449,7 +460,6 @@ main h2 {
 		display: block;
 		position: fixed;
 		width: 100%;
-		z-index: 1000;
 		background: var(--background);
 	}
 
@@ -485,8 +495,6 @@ main h2 {
 	/* Mobile menu items */
 
 	.mobile-menu-items {
-		/* This is IMPORTANT */
-		z-index: 99;
 		display: flex;
 		background: var(--background);
 		width: 100%;
