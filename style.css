@@ -311,10 +311,11 @@ h5 {
 header {
 	display: flex;
 	flex-direction: column;
+	z-index: 1000!important;
 }
 
 header.scrolled {
-	z-index: 100;
+	z-index: 1000 !important;
 	flex-direction: row;
 	justify-content: space-between;
 	max-width: 1200px;
