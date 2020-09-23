@@ -177,6 +177,12 @@ footer ul li, footer a{
 	text-decoration-color: var(--accents);
 	color: var(--accents-disabled);
 }
+.page-content a::after {
+	content: '';
+	height: 2px;
+	width: 0%;
+	background-color: var(--accents)
+}
 
 /*---------------------------- \
 | Buttons                       |
