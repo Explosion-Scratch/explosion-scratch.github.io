@@ -28,7 +28,7 @@
 | z-indexing                   |
 \-----------------------------*/
 .searchbox-mobile {
-	z-index: 0;
+	z-index: 18;
 }
 .mobile-menu-items {
 	z-index: 15;
