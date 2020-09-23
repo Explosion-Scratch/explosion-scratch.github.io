@@ -144,7 +144,7 @@ footer ul li, footer a{
 \-----------------------------*/
 .page-content a {
   position: relative;
-  z-index: -30;
+  z-index: 0;
 	color: var(--accents-disabled);
 	transition-duration: 0.5s;
 }
@@ -249,8 +249,11 @@ footer ul li, footer a{
 	min-width: 400px;
 	margin: 0 auto;
 	padding: 30px;
+	z-index: -2;
 }
-
+header {
+	z-index: 100;
+}
 .header-container {
 	position: absolute;
 	width: 100%;
@@ -311,6 +314,7 @@ header {
 }
 
 header.scrolled {
+	z-index: 100;
 	flex-direction: row;
 	justify-content: space-between;
 	max-width: 1200px;
