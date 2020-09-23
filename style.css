@@ -169,16 +169,15 @@ footer ul li, footer a{
 | Links                        |
 \-----------------------------*/
 .page-content a {
-	text-decoration: none;
+	text-decoration: underline solid transparent;
 	color: var(--accents-disabled);
-	transition: border-color, color, background-color 0.5s;
+	transition: all 0.5s;
 	border-bottom: 1px solid transparent;
 }
 .page-content a:hover {
-	border-color: var(--accents);
+	text-decoration-color: var(--accents);
 	color: var(--accents-disabled);
 }
-
 
 /*---------------------------- \
 | Buttons                       |
