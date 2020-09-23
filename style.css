@@ -177,16 +177,26 @@ footer ul li, footer a{
 	text-decoration-color: var(--accents);
 	color: var(--accents-disabled);
 }
-.page-content a::after {
-	content: '';
-	height: 2px;
-	width: 0%;
-	background-color: var(--accents);
-}
-a::hover::after {
-	width: 100%;
+
+.page-content a {
+  color: red;
+	text-decoration: none;
+	display: inline-block;
 }
 
+.page-content a:after {
+content: '';
+display: block;
+height: 3px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease;
+}
+
+.page-content a:hover:after {
+width: 100%;
+background: orange;
+}
 /*---------------------------- \
 | Buttons                       |
 \-----------------------------*/
