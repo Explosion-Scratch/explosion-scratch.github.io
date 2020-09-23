@@ -190,7 +190,7 @@ footer ul li, footer a{
 	height: 3px;
 	width: 0;
 	background: transparent;
-	transition: width .5s cubic-bezier(0.1, 0.885, 0.42, 1.275), background-color .5s ease;
+	transition: width .5s ease-out, background-color .5s ease;
 }
 
 .page-content a:hover:after {
