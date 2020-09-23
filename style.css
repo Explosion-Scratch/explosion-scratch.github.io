@@ -391,6 +391,7 @@ header.scrolled .menu-items {
 	opacity: 0;
 	pointer-events: none;
 	transform: all .4s;
+	background-color: var(--background)
 }
 
 .searchbox-desktop.active {
@@ -546,6 +547,7 @@ main h2 {
 		display: block;
 		padding-top: 0;
 		transition: all .4s;
+		background-color: var(--background)
 	}
 
 	.searchbox-mobile.active {
@@ -560,6 +562,7 @@ main h2 {
 		font-size: 16px;
 		border: none;
 		border-bottom: 1px solid #eee;
+		background-color: var(--background)
 	}
 
 	.searchbox-mobile input[type="text"]:focus {
