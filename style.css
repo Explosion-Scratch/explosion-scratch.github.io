@@ -572,6 +572,7 @@ main h2 {
 
 	.searchbox-mobile input[type="text"]:focus {
 		outline: none;
+		border-bottom: 1px solid car(--accents);
 	}
 
 }
