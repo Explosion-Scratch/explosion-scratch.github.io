@@ -36,6 +36,18 @@
 .mobile-header {
 	z-index: 20;
 }
+.header {
+	z-index: 20;
+}
+.heading {
+	z-index: 25;
+}
+.menu-items {
+	z-index: 18;
+}
+.menu {
+	z-index: 18;
+}
 /*---------------------------- \
 | Main element styling         |
 \-----------------------------*/
