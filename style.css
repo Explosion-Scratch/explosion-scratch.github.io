@@ -404,7 +404,7 @@ header.scrolled .menu-items {
 	height: 48px;
 	width: 300px;
 	border: none;
-	border-bottom: 3px solid transparent;
+	border-bottom: 3px solid var(--accents-disabled);
 	padding: 16px;
 	font-family: "Raleway", sans-serif;
 	font-size: 16px;
