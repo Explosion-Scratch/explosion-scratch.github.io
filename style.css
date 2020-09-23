@@ -414,7 +414,8 @@ header.scrolled .menu-items {
 .searchbox-desktop input[type="text"]:focus {
 	outline: none;
 	border-bottom: 3px solid var(--accents);
-	background: var(--tertiary-color)
+	background: var(--background);
+	opacity: 0.9;
 }
 
 /* Main */
