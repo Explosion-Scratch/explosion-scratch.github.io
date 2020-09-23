@@ -567,7 +567,7 @@ main h2 {
 		font-family: "Raleway", sans-serif;
 		font-size: 16px;
 		border: none;
-		border-bottom: 1px solidvar(--tertiary-color_;
+		border-bottom: 1px solid var(--tertiary-color);
 		background-color: var(--background)
 	}
 
