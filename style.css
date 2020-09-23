@@ -573,7 +573,6 @@ main h2 {
 		transition: all .4s;
 		background-color: var(--background)
 	}
-
 	.searchbox-mobile.active {
 		padding-top: 52px;
 	}
