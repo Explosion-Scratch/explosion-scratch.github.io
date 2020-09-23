@@ -175,11 +175,11 @@ footer ul li, footer a{
 }
 .page-content a:hover {
 	text-decoration-color: var(--accents);
-	color: var(--accents-disabled);
+	color: var(--accents);
 }
 
 .page-content a {
-  color: var(--accents);
+  color: var(--accents-disabled);
 	text-decoration: none;
 	display: inline-block;
 }
@@ -195,7 +195,7 @@ footer ul li, footer a{
 
 .page-content a:hover:after {
 	width: 100%;
-	background: var(--accents-disabled);
+	background: var(--accents);
 }
 /*---------------------------- \
 | Buttons                       |
