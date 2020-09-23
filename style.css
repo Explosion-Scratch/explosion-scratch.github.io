@@ -171,8 +171,8 @@ footer ul li, footer a{
 .page-content a {
 	color: var(--accents-disabled);
 	transition-duration: 0.5s;
+	border-bottom: 1px solid transparent;
 }
-
 .page-content a:hover {
 	color: var(--text);
 }
