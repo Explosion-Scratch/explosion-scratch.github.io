@@ -144,7 +144,7 @@ footer ul li, footer a{
 \-----------------------------*/
 .page-content a {
   position: relative;
-  z-index: 1;
+  z-index: -100;
 	color: var(--accents-disabled);
 	transition-duration: 0.5s;
 }
@@ -243,10 +243,10 @@ footer ul li, footer a{
 | Header                       |
 \-----------------------------*/
 .page-content {
-	max-width: 700px;
+	max-width: 600px;
 	min-width: 400px;
 	margin: 0 auto;
-	padding: 10vm;
+	padding: 30px;
 }
 
 .header-container {
