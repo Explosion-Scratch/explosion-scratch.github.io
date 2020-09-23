@@ -52,7 +52,7 @@
 	z-index: -1;
 }
 .page-content a {
-	
+	z-index: -10;
 }
 /*---------------------------- \
 | Main element styling         |
@@ -169,18 +169,16 @@ footer ul li, footer a{
 | Links                        |
 \-----------------------------*/
 .page-content a {
-  position: relative;
 	color: var(--accents-disabled);
 	transition-duration: 0.5s;
 }
-/*
+
 .page-content a:hover {
 	color: var(--text);
 }
 .page-content a::before {
 	opacity: .6;
   content: '';
-  position: absolute;
   z-index: -100;
   top: 0;
   bottom: 0;
@@ -196,7 +194,7 @@ footer ul li, footer a{
   transform: scaleX(1);
   transform-origin: center left;
 }
-*/
+
 /*---------------------------- \
 | Buttons                       |
 \-----------------------------*/
