@@ -587,12 +587,12 @@ main h2 {
 		border: none;
 		background-color: var(--background);
 		caret-color: var(--accents);
-		border-bottom: 2px solid var(--accents);
+		border-bottom: 1px solid var(--tertiary-color);
 	}
 	
 	
 	.searchbox-mobile input[type="text"]:focus {
-				border-bottom: 2px solid var(--accents);
+		border-bottom: 1px solid var(--accents);
 		color: transparent;
 		outline: none;
 	}
