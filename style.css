@@ -404,7 +404,7 @@ header.scrolled .menu-items {
 	height: 48px;
 	width: 300px;
 	border: none;
-	border-bottom: 3px solid var(--accents-disabled);
+	border-bottom: 3px solid transparent;
 	padding: 16px;
 	font-family: "Raleway", sans-serif;
 	font-size: 16px;
@@ -413,7 +413,6 @@ header.scrolled .menu-items {
 }
 
 .searchbox-desktop input[type="text"]:focus {
-	outline: 1px solid var(--accents);
 	border-bottom: 3px solid var(--accents);
 	background: var(--background);
 	box-shadow: 0 0 5 0 var(--box-shadow)
