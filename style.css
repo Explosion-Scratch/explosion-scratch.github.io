@@ -179,7 +179,7 @@ footer ul li, footer a{
 }
 
 .page-content a {
-  color: red;
+  color: var(--accents);
 	text-decoration: none;
 	display: inline-block;
 }
@@ -195,7 +195,7 @@ transition: width .5s ease, background-color .5s ease;
 
 .page-content a:hover:after {
 width: 100%;
-background: orange;
+background: var(--accents-disabled);
 }
 /*---------------------------- \
 | Buttons                       |
