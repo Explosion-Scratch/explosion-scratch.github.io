@@ -181,7 +181,10 @@ footer ul li, footer a{
 	content: '';
 	height: 2px;
 	width: 0%;
-	background-color: var(--accents)
+	background-color: var(--accents);
+}
+a::hover::after {
+	width: 100%;
 }
 
 /*---------------------------- \
