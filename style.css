@@ -172,7 +172,6 @@ footer ul li, footer a{
 	text-decoration: underline solid transparent;
 	color: var(--accents-disabled);
 	transition: all 0.5s;
-	border-bottom: 1px solid transparent;
 }
 .page-content a:hover {
 	text-decoration-color: var(--accents);
