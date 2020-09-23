@@ -595,6 +595,7 @@ main h2 {
 		background-color: red;
 		z-index: 50;
 	}
+	
 	.searchbox-mobile input[type="text"]:focus {
 		outline: none;
 	}
