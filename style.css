@@ -386,7 +386,7 @@ header.scrolled .menu-items {
 
 .searchbox-desktop {
 	position: absolute;
-	right: 0;
+	right: 50px;
 	top: 67px;
 	opacity: 0;
 	pointer-events: none;
