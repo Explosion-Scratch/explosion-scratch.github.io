@@ -169,12 +169,14 @@ footer ul li, footer a{
 | Links                        |
 \-----------------------------*/
 .page-content a {
+	text-decoration: none;
 	color: var(--accents-disabled);
 	transition-duration: 0.5s;
 	border-bottom: 1px solid transparent;
 }
 .page-content a:hover {
-	color: var(--text);
+	border-bottom: 1px solid var(--accents);
+	color: var(--accents-disabled);
 }
 
 
