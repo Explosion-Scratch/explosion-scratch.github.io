@@ -48,6 +48,12 @@
 .menu {
 	z-index: 18;
 }
+.page-content {
+	z-index: -1;
+}
+.page-content a {
+	
+}
 /*---------------------------- \
 | Main element styling         |
 \-----------------------------*/
