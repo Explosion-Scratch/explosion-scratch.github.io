@@ -148,6 +148,7 @@ footer ul li, footer a{
 	color: var(--accents-disabled);
 	transition-duration: 0.5s;
 }
+/*
 .page-content a:hover {
 	color: var(--text);
 }
@@ -170,6 +171,7 @@ footer ul li, footer a{
   transform: scaleX(1);
   transform-origin: center left;
 }
+*/
 /*---------------------------- \
 | Buttons                       |
 \-----------------------------*/
