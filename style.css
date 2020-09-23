@@ -407,6 +407,7 @@ header.scrolled .menu-items {
 	padding: 16px;
 	font-family: "Raleway", sans-serif;
 	font-size: 16px;
+	background-color: var(--background)
 }
 
 .searchbox-desktop input[type="text"]:focus {
