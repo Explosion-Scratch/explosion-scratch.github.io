@@ -587,7 +587,14 @@ main h2 {
 		border: none;
 		background-color: var(--background)
 	}
-	
+	.searchbox-mobile::after {
+		content: '';
+		display: block;
+		height: 3px;
+		width: 50%;
+		background-color: red;
+		z-index: 50;
+	}
 	.searchbox-mobile input[type="text"]:focus {
 		outline: none;
 	}
