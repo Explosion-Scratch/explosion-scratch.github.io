@@ -190,7 +190,7 @@ footer ul li, footer a{
 	height: 3px;
 	width: 0;
 	background: transparent;
-	transition: width .5s ease-out, background-color .5s ease;
+	transition: width .3s ease-out, background-color .5s ease;
 }
 
 .page-content a:hover:after {
@@ -593,7 +593,7 @@ main h2 {
 	
 	
 	.searchbox-mobile input[type="text"]:focus {
-		text-decoration: 1px solid underline var(--accents-disabled);
+		text-decoration: 1px solid underline var(--accents-disabled);)
 		color: transparent;
 		outline: none;
 	}
