@@ -57,6 +57,10 @@
 .image-container::before {
 	z-index: 1;
 }
+.image-container, .image-container::before, .image-container-container {
+	z-index: -1;
+}
+.i
 .dark-button {
 		z-index: 10000000;
 }
