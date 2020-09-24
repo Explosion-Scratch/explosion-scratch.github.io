@@ -104,6 +104,7 @@ body::-webkit-scrollbar-track {
 	border-radius: 10px;
 	transition-duration: 0.5s;
 	box-shadow: 0 2px 10px 0 var(--box-shadow);
+	margin-bottom: 20px;
 }
 #img:hover {
 	filter: saturate(150%), contrast(110%);
