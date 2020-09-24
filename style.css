@@ -102,11 +102,13 @@ body::-webkit-scrollbar-track {
 }
 
 #img {
-	border-radius: 5px;
+	border-radius: 10px;
+	transition-duration: 0.5s;
 }
 
 #img:hover {
 	box-shadow: 0 0 5px 0 var(--box-shadow);
+	filter: saturate(150%);
 }
 
 body::-webkit-scrollbar-thumb {
