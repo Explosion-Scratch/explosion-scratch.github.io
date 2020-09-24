@@ -55,10 +55,13 @@
 	z-index: -10;
 }
 .image-container::before {
-	z-index: 2;
+	z-index: 1;
 }
 .dark-button {
 		z-index: 10000000;
+}
+img {
+	z-index: 0; 
 }
 /*---------------------------- \
 | Main element styling         |
@@ -140,7 +143,6 @@ body::-webkit-scrollbar-track {
 	color: transparent;
 	font-size: 30px;
 	font-weight: 700;
-	z-index: 2;
 	content: attr(text);
 	position: absolute;
   top: 50%;
