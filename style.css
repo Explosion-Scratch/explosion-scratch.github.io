@@ -106,7 +106,7 @@ body::-webkit-scrollbar-track {
 	transition-duration: 0.5s;
 }
 
-#img:hover {
+#img:hover, .image-container-container:hover #img, .image-container:hover #img {
 	box-shadow: 0 2px 10px 0 var(--box-shadow);
 	filter: saturate(150%) blur(8px);
 }
@@ -117,7 +117,7 @@ body::-webkit-scrollbar-track {
 	transition-duration: 0.5s;
 }
 .image-container::before {
-	color: var(--background);
+	color: white;
 	font-size: 30px;
 	font-weight: 700;
 	z-index: 2;
