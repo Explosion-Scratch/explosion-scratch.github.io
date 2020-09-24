@@ -108,7 +108,6 @@ img {
 }
 
 * {
-
 	font-family: var(--main-font);
 	padding: 0;
 	margin: 0;
@@ -121,7 +120,7 @@ img {
 	outline: none;
 }
 .header, .header-container, .mobile-header, .mobile-menu-items, nav, p{
-	font-family: Montserrat;
+	font-family: var(--accented-font);
 }
 body {
 	overflow: overlay;
