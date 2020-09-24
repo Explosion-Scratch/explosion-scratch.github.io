@@ -110,6 +110,9 @@ body::-webkit-scrollbar-track {
 	box-shadow: 0 2px 10px 0 var(--box-shadow);
 	filter: saturate(150%) blur(8px);
 }
+.image-container-container:hover .image-container::before, .image-container:hover::before {
+	color: white;
+}
 .image-container {
 	position: relative;
 }
@@ -117,7 +120,7 @@ body::-webkit-scrollbar-track {
 	transition-duration: 0.5s;
 }
 .image-container::before {
-	color: white;
+	color: transparent;
 	font-size: 30px;
 	font-weight: 700;
 	z-index: 2;
