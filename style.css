@@ -54,6 +54,12 @@
 .page-content a {
 	z-index: -10;
 }
+.image-container::before {
+	z-index: 2;
+}
+.dark-button {
+		z-index: 10000000;
+}
 /*---------------------------- \
 | Main element styling         |
 \-----------------------------*/
@@ -243,7 +249,6 @@ footer ul li, footer a{
 	position: fixed;
 	right: 10px;
 	bottom: 10px;
-	z-index: 10000000;
 	transition-duration: 0.5s;
 	border: none;
 	border-radius: 50%;
