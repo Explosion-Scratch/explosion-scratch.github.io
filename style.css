@@ -110,7 +110,9 @@ body::-webkit-scrollbar-track {
 	box-shadow: 0 2px 10px 0 var(--box-shadow);
 	filter: saturate(150%) blur(2px);
 }
-
+.image-container::before {
+	content: attr(text);
+}
 body::-webkit-scrollbar-thumb {
 	background-color: var(--accents-disabled);
 	border-radius: 20px;
