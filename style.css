@@ -498,6 +498,7 @@ header.scrolled .menu-items {
 }
 
 .searchbox-desktop {
+	caret-color: var(--accents);
 	position: absolute;
 	right: 50px;
 	top: 67px;
