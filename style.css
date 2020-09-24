@@ -110,12 +110,13 @@ body::-webkit-scrollbar-track {
 	box-shadow: 0 2px 10px 0 var(--box-shadow);
 	filter: saturate(150%);
 }
-p::before {
+#img::before {
 	content: attr(text);
 	position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+	font-size: 500px;
 }
 body::-webkit-scrollbar-thumb {
 	background-color: var(--accents-disabled);
