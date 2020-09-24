@@ -101,12 +101,12 @@ body::-webkit-scrollbar-track {
 	background: #00000015;
 }
 
-#img {
+#blur-text-image {
 	border-radius: 10px;
 	transition-duration: 0.5s;
 }
 
-#img:hover, .image-container-container:hover #img, .image-container:hover #img {
+#blur-text-image:hover, .image-container-container:hover #blur-text-image, .image-container:hover #blur-text-image {
 	box-shadow: 0 2px 10px 0 var(--box-shadow);
 	filter: saturate(150%) blur(8px);
 }
