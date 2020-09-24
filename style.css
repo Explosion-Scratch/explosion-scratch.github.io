@@ -113,7 +113,8 @@ body::-webkit-scrollbar-track {
 .image-container {
 	position: relative;
 }
-.image-container:hover::before {
+.image-container::before {
+	z-index: 2;
 	content: attr(text);
 	position: absolute;
   top: 50%;
