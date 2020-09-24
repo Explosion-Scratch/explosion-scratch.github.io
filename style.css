@@ -104,7 +104,6 @@ body::-webkit-scrollbar-track {
 #img {
 	border-radius: 10px;
 	transition-duration: 0.5s;
-	filter: blur(1px);
 }
 
 #img:hover {
@@ -116,7 +115,7 @@ body::-webkit-scrollbar-track {
 }
 
 .image-container::before {
-	opacity: var(--text-opacity);
+	opacity: 0;
 	color: var(--background);
 	font-size: 500%;
 	z-index: 2;
