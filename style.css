@@ -105,6 +105,7 @@ body::-webkit-scrollbar-track {
 	transition-duration: 0.5s;
 	box-shadow: 0 2px 10px 0 var(--box-shadow);
 }
+#img
 #blur-text-image {
 	border-radius: 10px;
 	transition-duration: 0.5s;
