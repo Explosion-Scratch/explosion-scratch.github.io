@@ -115,6 +115,8 @@ body::-webkit-scrollbar-track {
 }
 
 .image-container::before {
+	color: var(--background);
+	font-size: 500%;
 	z-index: 2;
 	content: attr(text);
 	position: absolute;
