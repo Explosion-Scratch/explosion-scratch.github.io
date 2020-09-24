@@ -112,6 +112,7 @@ body::-webkit-scrollbar-track {
 }
 .image-container-container:hover .image-container::before, .image-container:hover::before {
 	color: white;
+	opacity: 1;
 }
 .image-container {
 	position: relative;
@@ -120,6 +121,7 @@ body::-webkit-scrollbar-track {
 	transition-duration: 0.5s;
 }
 .image-container::before {
+	opacity: 0;
 	color: transparent;
 	font-size: 30px;
 	font-weight: 700;
@@ -129,6 +131,8 @@ body::-webkit-scrollbar-track {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: #1111119d;
 }
 
 body::-webkit-scrollbar-thumb {
