@@ -120,8 +120,8 @@ img {
 *:focus {
 	outline: none;
 }
-.header, .header-container, .mobile-header, .mobile-menu-items, nav {
-	font-family: var(--accented-font);
+.header, .header-container, .mobile-header, .mobile-menu-items, nav, p{
+	font-family: Montserrat;
 }
 body {
 	overflow: overlay;
