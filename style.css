@@ -24,51 +24,68 @@
 	--text: white;
 	--box-shadow: #ffffff75;
 }
+
 /*---------------------------- \
 | z-indexing                   |
 \-----------------------------*/
 .searchbox-mobile {
 	z-index: 18;
 }
+
 .mobile-menu-items {
 	z-index: 15;
 }
+
 .mobile-header {
 	z-index: 20;
 }
+
 .header {
 	z-index: 20;
 }
+
 .heading {
 	z-index: 25;
 }
+
 .menu-items {
 	z-index: 18;
 }
+
 .menu {
 	z-index: 18;
 }
+
 .page-content {
 	z-index: -1;
 }
+
 .page-content a {
 	z-index: -10;
 }
+
 .image-container::before {
 	z-index: 1;
 }
-.image-container, .image-container-container, .blur-text-image {
+
+.image-container,
+.image-container-container,
+.blur-text-image {
 	z-index: -1;
 }
- .image-container::before {
-	 z-index: 1;
- }
+
+.image-container::before {
+	z-index: 1;
+}
+
 .dark-button {
-		z-index: 10000000;
+	z-index: 10000000;
 }
+
 img {
-	z-index: 0; 
+	z-index: 0;
 }
+
 /*---------------------------- \
 | Main element styling         |
 \-----------------------------*/
@@ -92,11 +109,13 @@ img {
 	margin: 0;
 	box-sizing: border-box;
 	transition: box-shadow, filter, border-color color, background-color 0.5s;
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
+
 *:focus {
 	outline: none;
 }
+
 body {
 	font-family: "Raleway", sans-serif;
 	overflow: overlay;
@@ -104,6 +123,7 @@ body {
 	color: var(--text);
 	background: var(--background);
 }
+
 p {
 	margin: 24px 0;
 }
@@ -115,35 +135,46 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
 	background: #00000015;
 }
+
 #img {
 	border-radius: 10px;
 	transition-duration: 0.5s;
 	box-shadow: 0 2px 10px 0 var(--box-shadow);
 	margin-bottom: 20px;
 }
+
 #img:hover {
 	filter: saturate(150%), contrast(110%);
 	box-shadow: 0 2px 10px 5px var(--box-shadow);
 }
+
 #blur-text-image {
 	border-radius: 10px;
 	transition-duration: 0.5s;
 }
 
-#blur-text-image:hover, .image-container-container:hover #blur-text-image, .image-container:hover #blur-text-image {
+#blur-text-image:hover,
+.image-container-container:hover #blur-text-image,
+.image-container:hover #blur-text-image {
 	box-shadow: 0 2px 10px 0 var(--box-shadow);
 	filter: saturate(150%) blur(8px);
 }
-.image-container-container:hover .image-container::before, .image-container:hover::before {
+
+.image-container-container:hover .image-container::before,
+.image-container:hover::before {
 	color: white;
 	opacity: 1;
 }
+
 .image-container {
 	position: relative;
 }
-.image-container, .image-container-container{
+
+.image-container,
+.image-container-container {
 	transition-duration: 0.5s;
 }
+
 .image-container::before {
 	opacity: 0;
 	color: transparent;
@@ -151,9 +182,9 @@ body::-webkit-scrollbar-track {
 	font-weight: 700;
 	content: attr(text);
 	position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	padding: 40px;
 	border: 8px solid #111111c9;
 	background-color: #1111119d;
@@ -165,58 +196,63 @@ body::-webkit-scrollbar-thumb {
 }
 
 details {
-  border-radius: 5px;
-  background: var(--accents);
-  margin: 5px;
-  padding: 5px;
+	border-radius: 5px;
+	background: var(--accents);
+	margin: 5px;
+	padding: 5px;
 }
+
 details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: var(--accents-disabled);
-  padding: 10px 10px 0;
-  margin: 1em 0;
-  border-radius: 6px;
-  overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: var(--accents-disabled);
+	padding: 10px 10px 0;
+	margin: 1em 0;
+	border-radius: 6px;
+	overflow: hidden;
 }
 
 details[open] {
-  padding: 10px;
+	padding: 10px;
 }
 
-details > :last-child {
-  margin-bottom: 0;
+details> :last-child {
+	margin-bottom: 0;
 }
 
 details[open] summary {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 summary {
-  display: list-item;
-  background-color: var(--accents);
-  padding: 10px;
-  margin: -10px -10px 0;
+	display: list-item;
+	background-color: var(--accents);
+	padding: 10px;
+	margin: -10px -10px 0;
 }
 
-details > :not(summary) {
-  margin-top: 0;
+details> :not(summary) {
+	margin-top: 0;
 }
 
 summary::-webkit-details-marker {
-  color: var(--text-main);
+	color: var(--text-main);
 }
-footer{
+
+footer {
 	padding: 20px;
 	background-color: var(--tertiary-color);
 }
-footer ul li, footer a{
+
+footer ul li,
+footer a {
 	color: var(--accents);
 	display: inline;
 	margin: 0 auto;
 	padding: 10px;
 }
+
 /*---------------------------- \
 | Links                        |
 \-----------------------------*/
@@ -225,13 +261,14 @@ footer ul li, footer a{
 	color: var(--accents-disabled);
 	transition: all 0.5s;
 }
+
 .page-content a:hover {
 	text-decoration-color: var(--accents);
 	color: var(--accents);
 }
 
 .page-content a {
-  color: var(--accents-disabled);
+	color: var(--accents-disabled);
 	text-decoration: none;
 	display: inline-block;
 }
@@ -249,6 +286,7 @@ footer ul li, footer a{
 	width: 100%;
 	background: var(--accents);
 }
+
 /*---------------------------- \
 | Buttons                       |
 \-----------------------------*/
@@ -286,29 +324,34 @@ footer ul li, footer a{
 .dark-mode .dark-image {
 	filter: invert(100%);
 }
+
 /*---------------------------- \
 | Buttons                       |
 \-----------------------------*/
 
-#button, #centered-button {
-   color: var(--accents-disabled);
-   background-color: transparent;
-   border: 1px solid var(--accents);
-   border-radius: 4px;
-   padding: 0 15px;
-   cursor: pointer;
-   height: 32px;
-   font-size: 14px;
-   transition: all 0.2s ease-in-out;
-   margin: 10px;
+#button,
+#centered-button {
+	color: var(--accents-disabled);
+	background-color: transparent;
+	border: 1px solid var(--accents);
+	border-radius: 4px;
+	padding: 0 15px;
+	cursor: pointer;
+	height: 32px;
+	font-size: 14px;
+	transition: all 0.2s ease-in-out;
+	margin: 10px;
 }
+
 #button:hover {
-  box-shadow: 1px 1px var(--accents), 2px 2px var(--accents-disabled), 3px 3px #53a7ea;
-  transform: translateX(-3px);
+	box-shadow: 1px 1px var(--accents), 2px 2px var(--accents-disabled), 3px 3px #53a7ea;
+	transform: translateX(-3px);
 }
+
 #centered-button:hover {
-  box-shadow: 1px 1px var(--accents), 2px 2px var(--accents-disabled), 3px 3px #53a7ea;
+	box-shadow: 1px 1px var(--accents), 2px 2px var(--accents-disabled), 3px 3px #53a7ea;
 }
+
 /*---------------------------- \
 | Icons                         |
 \-----------------------------*/
@@ -624,6 +667,7 @@ main h2 {
 		transition: all .4s;
 		background-color: var(--background)
 	}
+
 	.searchbox-mobile.active {
 		padding-top: 52px;
 	}
@@ -640,8 +684,8 @@ main h2 {
 		caret-color: var(--accents);
 		border-bottom: 1px solid var(--tertiary-color);
 	}
-	
-	
+
+
 	.searchbox-mobile input[type="text"]:focus {
 		border-bottom: 1px solid var(--accents);
 		color: transparent;
