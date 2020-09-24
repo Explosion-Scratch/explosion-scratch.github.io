@@ -108,7 +108,7 @@ body::-webkit-scrollbar-track {
 
 #img:hover {
 	box-shadow: 0 2px 10px 0 var(--box-shadow);
-	filter: saturate(150%) blur(2px);
+	filter: saturate(150%) blur(8px);
 }
 .image-container {
 	position: relative;
@@ -117,7 +117,6 @@ body::-webkit-scrollbar-track {
 	transition-duration: 0.5s;
 }
 .image-container::before {
-	opacity: 0;
 	color: var(--background);
 	font-size: 30px;
 	font-weight: 700;
@@ -128,9 +127,7 @@ body::-webkit-scrollbar-track {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.image-container-container:hover .image-container::before {
-	opacity: 1;
-}
+
 body::-webkit-scrollbar-thumb {
 	background-color: var(--accents-disabled);
 	border-radius: 20px;
