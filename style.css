@@ -113,7 +113,9 @@ body::-webkit-scrollbar-track {
 .image-container {
 	position: relative;
 }
-
+.image-container, .image-container-container{
+	transition-duration: 0.5s;
+}
 .image-container::before {
 	opacity: 0;
 	color: var(--background);
