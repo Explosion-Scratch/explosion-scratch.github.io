@@ -108,7 +108,7 @@ body::-webkit-scrollbar-track {
 
 #img:hover {
 	box-shadow: 0 2px 10px 0 var(--box-shadow);
-	filter: saturate(150%);
+	filter: saturate(150%), blur(2px);
 }
 
 body::-webkit-scrollbar-thumb {
