@@ -131,7 +131,8 @@ body::-webkit-scrollbar-track {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-	padding: 20px;
+	padding: 40px;
+	border: 3px solid var(--accents);
 	background-color: #1111119d;
 }
 
