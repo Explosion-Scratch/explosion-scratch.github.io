@@ -382,6 +382,10 @@ footer a {
 	transition: all .3s ease;
 	margin: 5px;
 }
+#arrow h1,h2,h3 ::before {
+	content: url('https://api.iconify.design/heroicons-solid:arrow-narrow-right.svg?height=20');
+vertical-align: -0.125em;
+}
 #inline_icon:hover {
 	color: var(--tertiary-color);
 }
