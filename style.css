@@ -365,7 +365,7 @@ footer a {
 	height: auto;
 }
 #display_icon {
-	transition: all 0.3s ;
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 2) ;
 	display: block;
 	width: 30vw;
 	height: auto;
