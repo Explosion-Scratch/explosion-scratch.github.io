@@ -365,7 +365,7 @@ footer a {
 	height: auto;
 }
 #display_icon {
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ;
 	display: block;
 	width: 30vw;
 	height: auto;
@@ -376,7 +376,7 @@ footer a {
 	box-shadow: 0 0 0 5px var(--highlight-color)
 }
 #display_icon:hover {
-	box-shadow: 0 0 0 15px var(--highlight-color), 0 0 0 5px var(--accents-disabled), 0 0 0 10px var(--accents);
+	box-shadow: 0 0 0 10px var(--highlight-color), 0 0 0 5px var(--highlight-color);
 }
 
 /*---------------------------- \
