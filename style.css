@@ -380,10 +380,9 @@ footer a {
 #display_icon:hover {
 	box-shadow: 0 0 0 10px var(--highlight-color), 0 0 0 5px var(--highlight-color);
 }
-#link_copy::after {
+#link_copy::before {
 	float: right;
-	content: url('https://api.iconify.design/foundation:link.svg?height=16');
-	vertical-align: -0.125em;
+	content: url('https://api.iconify.design/foundation:link.svg?height=20');
 }
 /*---------------------------- \
 | Header                       |
