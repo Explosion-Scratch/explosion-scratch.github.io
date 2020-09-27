@@ -378,7 +378,9 @@ footer a {
 #display_icon:hover {
 	box-shadow: 0 0 0 10px var(--highlight-color), 0 0 0 5px var(--highlight-color);
 }
-
+#inline_icon {
+	
+}
 /*---------------------------- \
 | Header                       |
 \-----------------------------*/
