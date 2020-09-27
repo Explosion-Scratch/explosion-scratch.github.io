@@ -365,11 +365,14 @@ footer a {
 	height: auto;
 }
 #display_icon {
+	display: block;
 	width: 30vw;
 	height: auto;
 	margin: 0 auto;
 	text-align: center;
 	padding: 20px;
+	
+	box-shadow: 0 0 0 5px;
 }
 
 /*---------------------------- \
