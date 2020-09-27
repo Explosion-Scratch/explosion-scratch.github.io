@@ -373,7 +373,7 @@ footer a {
 	text-align: center;
 	padding: 20px;
 	border-radius: 5vw;
-	box-shadow: 0 0 0 6px var(--highlight-color), 0 0 0 2px var(--accents-disabled), 0 0 0 4px var(--accents);
+	box-shadow: 0 0 0 5px var(--highlight-color)
 }
 #display_icon:hover {
 	box-shadow: 0 0 0 15px var(--highlight-color), 0 0 0 5px var(--accents-disabled), 0 0 0 10px var(--accents);
