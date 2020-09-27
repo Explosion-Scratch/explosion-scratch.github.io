@@ -379,7 +379,11 @@ footer a {
 	box-shadow: 0 0 0 10px var(--highlight-color), 0 0 0 5px var(--highlight-color);
 }
 #inline_icon {
+	transition: all .3s ease;
 	margin: 5px;
+}
+#inline_icon:hover {
+	color: var(--tertiary-color);
 }
 /*---------------------------- \
 | Header                       |
