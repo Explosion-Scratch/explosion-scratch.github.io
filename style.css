@@ -725,6 +725,7 @@ main h2 {
 	margin: calc(var(--menu-size)*1.2) 0;
 	transition: 0.4s;
 	border-radius: 50px;
+	
 }
 
 .menu .bar1 {
