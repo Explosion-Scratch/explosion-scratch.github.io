@@ -364,6 +364,13 @@ footer a {
 	width: 20px;
 	height: auto;
 }
+#display_icon {
+	width: 30vw;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+}
 
 /*---------------------------- \
 | Header                       |
