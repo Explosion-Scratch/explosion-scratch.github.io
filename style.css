@@ -262,20 +262,21 @@ footer a {
 | Links                        |
 \-----------------------------*/
 a {
-		padding: 2px;
-		line-height: 1em;
-		text-decoration: none;
-		background-size: 200% auto;
-		background-position: -0% 0;
-		background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--accents) 50%);
-		transition: all 0.3s ease-out;
-	}
+	color: var(--accents-disabled);
+	padding: 2px;
+	line-height: 1em;
+	text-decoration: none;
+	background-size: 200% auto;
+	background-position: -0% 0;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--accents) 50%);
+	transition: all 0.3s ease-out;
+}
 
-	a:hover {
-		border-bottom: 1px solid transparent;
-		color: black;
-		background-position: -100% 0;
-	}
+a:hover {
+	border-bottom: 1px solid transparent;
+	color: var(--tertiary-color);
+	background-position: -100% 0;
+}
 /*---------------------------- \
 | Buttons                       |
 \-----------------------------*/
