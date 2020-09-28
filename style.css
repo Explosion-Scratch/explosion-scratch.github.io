@@ -261,7 +261,7 @@ footer a {
 /*---------------------------- \
 | Links                        |
 \-----------------------------*/
-a {
+.page-content a {
 	color: var(--accents-disabled);
 	padding: 2px;
 	line-height: 1em;
@@ -272,9 +272,12 @@ a {
 	transition: all 0.3s ease-out;
 }
 
-a:hover {
+.page-content a:hover {
 	color: var(--tertiary-color);
 	background-position: -100% 0;
+}
+.page-content .dark-mode a:hover {
+	color: var(--text);
 }
 /*---------------------------- \
 | Buttons                       |
