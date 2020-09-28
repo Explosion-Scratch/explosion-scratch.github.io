@@ -261,37 +261,21 @@ footer a {
 /*---------------------------- \
 | Links                        |
 \-----------------------------*/
-.page-content a {
-	text-decoration: underline solid transparent;
-	color: var(--accents-disabled);
-	transition: all 0.5s;
-}
+a {
+		padding: 2px;
+		line-height: 1em;
+		text-decoration: none;
+		background-size: 200% auto;
+		background-position: -0% 0;
+		background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--accents) 50%);
+		transition: all 0.3s ease-out;
+	}
 
-.page-content a:hover {
-	text-decoration-color: var(--accents);
-	color: var(--accents);
-}
-
-.page-content a {
-	color: var(--accents-disabled);
-	text-decoration: none;
-	display: inline-block;
-}
-
-.page-content a:after {
-	content: '';
-	display: block;
-	height: 3px;
-	width: 0;
-	background: transparent;
-	transition: width .3s ease-out, background-color .5s ease;
-}
-
-.page-content a:hover:after {
-	width: 100%;
-	background: var(--accents);
-}
-
+	a:hover {
+		border-bottom: 1px solid transparent;
+		color: black;
+		background-position: -100% 0;
+	}
 /*---------------------------- \
 | Buttons                       |
 \-----------------------------*/
