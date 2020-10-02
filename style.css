@@ -262,6 +262,7 @@ blockquote {
 	background: var(--accents-transparent);
 	padding: 20px;
 	border-left: 10px solid var(--accents-disabled);
+	border-radius: 0 10px 10px 0;
 }
 /*---------------------------- \
 | Links                        |
