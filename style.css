@@ -14,6 +14,7 @@
 	--box-shadow: #00000075;
 	--main-font: Raleway, sans-serif;
 	--accented-font: Montserrat, sans-serif;
+	--accents-transparent: #30d1ae70;
 }
 
 .dark-mode {
@@ -257,7 +258,11 @@ footer a {
 	margin: 0 auto;
 	padding: 10px;
 }
-
+blockquote {
+	background: var(--accents-transparent);
+	padding: 20px;
+	border-left: 10px solid var(--accents-disabled);
+}
 /*---------------------------- \
 | Links                        |
 \-----------------------------*/
