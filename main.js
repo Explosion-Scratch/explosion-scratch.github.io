@@ -73,5 +73,12 @@ $(document).ready(function() {
 	$('a').attr('target', '_blank');
 	$('.page-content h1').append('<hr>');
 	$('blockquote').html('<i>' + $('blockquote').html() + '</i>');
+	$(".accordion p").hide();
+  $(".accordion h3").click(function(){
+    $(this).next("p").slideToggle("slow")
+     .siblings("p:visible").slideUp("slow");
+    $(this).toggleClass("active");
+    $(this).siblings("h3").removeClass("active");
+  });
 });
 
