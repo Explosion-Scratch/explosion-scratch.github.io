@@ -94,16 +94,16 @@ img {
 | Main element styling         |
 \-----------------------------*/
 hr {
-		--color: black;
+		--hr-color: black;
     border: 0;
     height: 1px;
     background: #333;
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(50%,var(--hr-color)), color-stop(100%,transparent));
-    background: -webkit-linear-gradient(left,transparent 0%, hsla(0,0%,0%,.75) 50%,transparent 100%);
-    background:    -moz-linear-gradient(left, transparent 0%, hsla(0,0%,0%,.75) 50%,transparent 100%);
-    background:     -ms-linear-gradient(left,transparent 0%, hsla(0,0%,0%,.75) 50%, transparent 100%);
-    background:      -o-linear-gradient(left,transparent 0%, hsla(0,0%,0%,.75) 50%,transparent 100%);
-    background:         linear-gradient(left, transparent 0%, hsla(0,0%,0%,.75) 50%, transparent 100%);
+    background: -webkit-linear-gradient(left,transparent 0%, var(--hr-color) 50%,transparent 100%);
+    background:    -moz-linear-gradient(left, transparent 0%, var(--hr-color) 50%,transparent 100%);
+    background:     -ms-linear-gradient(left,transparent 0%, var(--hr-color) 50%, transparent 100%);
+    background:      -o-linear-gradient(left,transparent 0%, var(--hr-color) 50%,transparent 100%);
+    background:         linear-gradient(left, transparent 0%, var(--hr-color) 50%, transparent 100%);
 }
 *::selection {
 	background: var(--highlight-color);
