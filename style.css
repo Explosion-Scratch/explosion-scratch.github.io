@@ -98,7 +98,7 @@ hr {
     border: 0;
     height: 1px;
     background: #333;
-    background: linear-gradient(transparent, var(--hr-color));;
+    background: linear-gradient(to right, transparent , var(--hr-color), transparent);
 }
 *::selection {
 	background: var(--highlight-color);
