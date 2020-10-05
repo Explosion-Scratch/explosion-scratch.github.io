@@ -69,6 +69,9 @@ document.getElementById('Mobile_Search').onsubmit = function() {
 function menu(x) {
 	x.classList.toggle("menu");
 }
-$('a').attr('target', '_blank');
-$('.page-content h1').append('<hr>');
-$('blockquote').html('<i>' + $('blockquote').html() + '</i>');
+$(document).ready(function() {
+	$('a').attr('target', '_blank');
+	$('.page-content h1').append('<hr>');
+	$('blockquote').html('<i>' + $('blockquote').html() + '</i>');
+});
+
