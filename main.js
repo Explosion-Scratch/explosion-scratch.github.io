@@ -70,8 +70,8 @@ function menu(x) {
 	x.classList.toggle("menu");
 }
 $(document).ready(function() {
-	$('a').attr('target', '_blank');
-	$('.page-content h1').append('<hr>');
+	$('.page-content a').attr('target', '_blank');
+	$('.page-content h1, h2').append('<hr>');
 	$('blockquote').html('<i>' + $('blockquote').html() + '</i>');
 });
 
