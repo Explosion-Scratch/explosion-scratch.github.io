@@ -70,4 +70,5 @@ function menu(x) {
 	x.classList.toggle("menu");
 }
 $('a').attr('target', '_blank');
-$('.page-content h1').append('<hr>')
+$('.page-content h1').append('<hr>');
+$('blockquote').html('<i>' + $('blockquote').html() + '</i>')
