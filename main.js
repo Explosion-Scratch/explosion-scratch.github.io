@@ -70,3 +70,4 @@ function menu(x) {
 	x.classList.toggle("menu");
 }
 $('a').attr('target', '_blank');
+$('')
