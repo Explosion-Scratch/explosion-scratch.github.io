@@ -94,7 +94,7 @@ img {
 | Main element styling         |
 \-----------------------------*/
 hr {
-		--hr-color: black;
+		--hr-color: var(--box-shadow);
     border: 0;
     height: 1px;
     background: #333;
