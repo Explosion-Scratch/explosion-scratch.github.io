@@ -127,9 +127,8 @@ hr {
 *:focus {
 	outline: none;
 }
-.header, .header-container, .mobile-header, .mobile-menu-items, nav, p{
-	font-family: var(--accented-font);
-}
+
+
 body {
 	overflow: overlay;
 	min-height: 100vh;
