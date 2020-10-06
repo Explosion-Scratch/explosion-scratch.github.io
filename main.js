@@ -51,12 +51,16 @@ mobileSearchIcon.addEventListener("click", function() {
 		timesIcon.style.display = "none";
 	}
 })
-
+window.onload(set_cookies());
+function set_cookies() {
+	var on = localStorage.getItem('toggled');
+	if (on === 'true') {
+		document.body.classList.toggle('dark-mode');
+	};
+};
 function DarkMode() {
 	var element = document.body;
-	element.classList.toggle("dark-mode");
-	localStorage.setItem('toggled', 'true');
-	console.log('lol');
+	localStorage.setItem('toggled', element.classList.toggle("dark-mode"));
 }
 
 document.getElementById('Search').onsubmit = function() {
