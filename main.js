@@ -51,7 +51,7 @@ mobileSearchIcon.addEventListener("click", function() {
 		timesIcon.style.display = "none";
 	}
 })
-window.onload(set_cookies());
+window.onload = set_cookies();
 function set_cookies() {
 	var on = localStorage.getItem('toggled');
 	if (on === 'true') {
