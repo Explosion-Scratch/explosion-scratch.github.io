@@ -53,7 +53,7 @@ mobileSearchIcon.addEventListener("click", function() {
 })
 
 function DarkMode() {
-	window.classList.toggle("dark-mode");
+	var toggled = window.classList.toggle("dark-mode");
 }
 
 document.getElementById('Search').onsubmit = function() {
