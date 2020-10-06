@@ -55,7 +55,8 @@ mobileSearchIcon.addEventListener("click", function() {
 function DarkMode() {
 	var element = document.body;
 	element.classList.toggle("dark-mode");
-	localStorage.setItem('toggled', 'yes');
+	localStorage.setItem('toggled', 'true');
+	console.log('lol');
 }
 
 document.getElementById('Search').onsubmit = function() {
