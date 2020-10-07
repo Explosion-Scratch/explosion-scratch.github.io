@@ -285,7 +285,7 @@ blockquote {
 }
 
 .page-content a:hover {
-	color: var(--tertiary-color);
+	color: var(--background);
 	background-position: -100% 0;
 }
 .page-content .dark-mode a:hover {
