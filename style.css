@@ -500,8 +500,8 @@ header.scrolled .menu-items {
 .search-icon-desktop {
 	cursor: pointer;
 }
-input[type='text'] {
-	color: violet !important;
+input {
+	color: var(--accents) !important;
 }
 .searchbox-desktop {
 	caret-color: var(--accents);
