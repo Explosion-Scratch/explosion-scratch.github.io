@@ -280,7 +280,7 @@ blockquote {
 	text-decoration: none;
 	background-size: 200% auto;
 	background-position: -0% 0;
-	background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--accents) 50%);
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--accents-transparent) 50%);
 	transition: all 0.3s ease-out;
 }
 
