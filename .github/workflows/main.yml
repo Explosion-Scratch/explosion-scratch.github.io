@@ -21,4 +21,4 @@ jobs:
         if: failure()
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "style: format code"
+          commit_message: "Beautified code"
