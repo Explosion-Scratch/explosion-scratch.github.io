@@ -1,0 +1,158 @@
+<body>
+	<div class="header-container">
+		<header>
+			<div class="heading">
+				<div class="container">
+					<h1>--Explosion--</h1>
+				</div>
+			</div>
+			<!-- This section will need to be changed if copy pasted to another page, along with the one with the mobile menu items. -->
+			<div class="menu-items">
+				<div class="container">
+					<div class="menu">
+						<ul>
+							<li><a href="index.html#home">Home</a></li>
+							<li><a href="index.html#contact">Contact</a></li>
+							<li><a href="projects.html">Projects</a></li>
+						</ul>
+					</div>
+					<div class="social">
+						<ul>
+							<li class="search-icon-desktop"><i class="fas fa-search"></i></li>
+							<li><a href="mailto:explosion-scratch@gmail.com"><span class="iconify" data-icon="clarity:email-solid" data-inline="false"></span></a></li>
+							<li><a href="https://github.com/explosion-scratch"><span class="iconify" data-icon="bytesize:github" data-inline="false"></span></i></a></li>
+							<li><a href="https://scratch.mit.edu/users/--explosion--"><span class="iconify" data-icon="simple-icons:scratch" data-inline="false"></span></a></li>
+						</ul>
+					</div>
+
+					<div class="searchbox-desktop">
+						<form id="Search">
+							<input target="_blank_" id="Text_Search" type="text" placeholder="Search Here...">
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="mobile-header">
+		<header>
+			<div class="menu-icon" onclick='menu(this)'>
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div class="heading">
+				<h1>--Explosion--</h1>
+			</div>
+			<div class="search-icon">
+				<i class="fas fa-search"></i>
+				<i class="fas fa-times"></i>
+			</div>
+		</header>
+	</div>
+
+	<div class="mobile-menu-items">
+		<ul>
+			<br>
+			<li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="projects.html">Projects</a></li>
+		</ul>
+	</div>
+
+	<div class="searchbox-mobile">
+		<form id="Mobile_Search">
+			<input target="_blank_" id="Mobile_Text_Search" type="text" placeholder="Search Here...">
+		</form>
+	</div>
+	<button class="dark-button" onclick='DarkMode()'><img class="dark-image" src="Images/Dark_Mode.svg"></button>
+	<!-- At this point the html tag and the body tag still are not closed. -->
+	<head>
+		<script>
+			const headerContainer = document.querySelector(".header-container");
+	const header = document.querySelector("header");
+
+	const menuIcon = document.querySelector(".menu-icon");
+	const mobileMenuItems = document.querySelector(".mobile-menu-items");
+
+	const mobileSearchIcon = document.querySelector(".mobile-header .search-icon");
+	const searchBoxMobile = document.querySelector(".searchbox-mobile");
+
+	const timesIcon = document.querySelector(".search-icon .fa-times");
+	const searchIcon = document.querySelector(".search-icon .fa-search");
+
+	const searchIconDesktop = document.querySelector(".social .search-icon-desktop");
+	const searchBoxDesktop = document.querySelector(".searchbox-desktop");
+
+	// Scroll
+
+	window.addEventListener("scroll", function() {
+
+		if (window.pageYOffset > 300) {
+			header.classList.add("scrolled");
+			headerContainer.classList.add("fixed");
+		} else {
+			header.classList.remove("scrolled");
+			headerContainer.classList.remove("fixed");
+		}
+	})
+
+	// Desktop Search
+
+	searchIconDesktop.addEventListener("click", function() {
+		searchBoxDesktop.classList.toggle("active");
+	})
+
+	// Mobile Menu 
+
+	menuIcon.addEventListener("click", function() {
+		mobileMenuItems.classList.toggle("active");
+	})
+
+	// Mobile Search
+
+	mobileSearchIcon.addEventListener("click", function() {
+		searchBoxMobile.classList.toggle("active");
+
+		if (searchBoxMobile.classList.contains("active")) {
+			searchIcon.style.display = "none";
+			timesIcon.style.display = "block";
+		} else {
+			searchIcon.style.display = "block";
+			timesIcon.style.display = "none";
+		}
+	})
+	window.onload = set_cookies();
+	function set_cookies() {
+		var on = localStorage.getItem('toggled');
+		if (on === 'true') {
+			document.body.classList.toggle('dark-mode');
+		};
+	};
+	function DarkMode() {
+		var element = document.body;
+		localStorage.setItem('toggled', element.classList.toggle("dark-mode"));
+	}
+
+	document.getElementById('Search').onsubmit = function() {
+		window.location = 'http://www.google.com/search?q=site:explosion-scratch.github.io ' + document.getElementById('Text_Search').value;
+		return false;
+	}
+	document.getElementById('Mobile_Search').onsubmit = function() {
+		window.location = 'http://www.google.com/search?q=site:explosion-scratch.github.io ' + document.getElementById('Mobile_Text_Search').value;
+		return false;
+	}
+
+	function menu(x) {
+		x.classList.toggle("menu");
+	}
+	$(document).ready(function() {
+		$('.page-content a').attr('target', '_blank');
+		$('.page-content h1, h2').append('<hr>');
+		$('blockquote').html('<i>' + $('blockquote').html() + '</i>');
+	});
+
+
+
+		</script>
+	</head>
