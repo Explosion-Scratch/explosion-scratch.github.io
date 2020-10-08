@@ -17,9 +17,81 @@
 	</script>
 	<title>--Explosion-- | Home</title>
 </head>
-	<div w3-include-html="header.html"></div>
-		<main><a name='home'></a>
+
+<body>
+	<div class="header-container">
+		<header>
+			<div class="heading">
+				<div class="container">
+					<h1>--Explosion--</h1>
+				</div>
+			</div>
+			<!-- This section will need to be changed if copy pasted to another page, along with the one with the mobile menu items. -->
+			<div class="menu-items">
+				<div class="container">
+					<div class="menu">
+						<ul>
+							<li><a href="index.html#home">Home</a></li>
+							<li><a href="index.html#contact">Contact</a></li>
+							<li><a href="projects.html">Projects</a></li>
+						</ul>
+					</div>
+					<div class="social">
+						<ul>
+							<li class="search-icon-desktop"><i class="fas fa-search"></i></li>
+							<li><a href="mailto:explosion-scratch@gmail.com"><span class="iconify" data-icon="clarity:email-solid" data-inline="false"></span></a></li>
+							<li><a href="https://github.com/explosion-scratch"><span class="iconify" data-icon="bytesize:github" data-inline="false"></span></i></a></li>
+							<li><a href="https://scratch.mit.edu/users/--explosion--"><span class="iconify" data-icon="simple-icons:scratch" data-inline="false"></span></a></li>
+						</ul>
+					</div>
+
+					<div class="searchbox-desktop">
+						<form id="Search">
+							<input target="_blank_" id="Text_Search" type="text" placeholder="Search Here...">
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="mobile-header">
+		<header>
+			<div class="menu-icon" onclick='menu(this)'>
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div class="heading">
+				<h1>--Explosion--</h1>
+			</div>
+			<div class="search-icon">
+				<i class="fas fa-search"></i>
+				<i class="fas fa-times"></i>
+			</div>
+		</header>
+	</div>
+
+	<div class="mobile-menu-items">
+		<ul>
+			<br>
+			<li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="projects.html">Projects</a></li>
+		</ul>
+	</div>
+
+	<div class="searchbox-mobile">
+		<form id="Mobile_Search">
+			<input target="_blank_" id="Mobile_Text_Search" type="text" placeholder="Search Here...">
+		</form>
+	</div>
+	<button class="dark-button" onclick='DarkMode()'><img class="dark-image" src="Images/Dark_Mode.svg"></button>
+	<!-- At this point the html tag and the body tag still are not closed. -->
+  
+	<main><a name='home'></a>
 		<div class="page-content">
+			<div class="container">
+			</div>
 			<div class='image-container-container'>
 				<div text='Wassup.' class='image-container'>
 					<img id='blur-text-image' src='https://i.ytimg.com/vi/ReF6iQ7M5_A/maxresdefault.jpg'>
@@ -46,8 +118,5 @@
 	</ul>
 </footer>
 </html>
-<script src="include.js"></script>
+<script src="main.js"></script>
 <script src="Prism/prism.js"></script>
-<script>
-	includeHTML();
-</script>
