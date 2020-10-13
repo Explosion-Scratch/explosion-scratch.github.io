@@ -271,9 +271,9 @@ blockquote {
 	border-radius: 0 10px 10px 0;
 }
 p::first-letter {
-  color: #903;
+  color: var(--accents);
   float: left;
-  font-family: Georgia;
+  font-family: Montserrat;
   font-size: 75px;
   line-height: 60px;
   padding-top: 4px;
