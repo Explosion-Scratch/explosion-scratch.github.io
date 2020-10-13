@@ -271,9 +271,11 @@ blockquote {
 	border-radius: 0 10px 10px 0;
 }
 p::first-letter {
-	font-size: 50px;
-	padding: 10px;
-	float: left;
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 6rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
 }
 /*---------------------------- \
 | Links                        |
