@@ -274,7 +274,7 @@ p::first-letter {
   color: var(--accents);
   float: left;
   font-family: Montserrat;
-	initial-letter: 2;
+	font-size: 30px;
 }
 /*---------------------------- \
 | Links                        |
