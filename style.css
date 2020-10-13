@@ -270,6 +270,10 @@ blockquote {
 	border-left: 10px solid var(--accents-disabled);
 	border-radius: 0 10px 10px 0;
 }
+p::first-letter {
+	font-size: 30px;
+	padding: 10px;
+}
 /*---------------------------- \
 | Links                        |
 \-----------------------------*/
