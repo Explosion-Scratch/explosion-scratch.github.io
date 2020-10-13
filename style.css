@@ -271,8 +271,9 @@ blockquote {
 	border-radius: 0 10px 10px 0;
 }
 p::first-letter {
-	font-size: 30px;
+	font-size: 50px;
 	padding: 10px;
+	float: left;
 }
 /*---------------------------- \
 | Links                        |
