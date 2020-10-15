@@ -289,8 +289,8 @@ blockquote {
 }
 .icon {
 	border-radius: 10px;
-	width: 100%;
-	vertical-align: middle;
+	width: 80%;
+	margin: 0 auto;
 }
 table{
 	background: red;
