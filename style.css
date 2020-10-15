@@ -274,6 +274,13 @@ blockquote {
   border-left: 10px solid var(--accents-disabled);
   border-radius: 0 10px 10px 0;
 }
+.cover {
+  height: 100vh;
+  width: 100vw;
+  padding: none;
+  margin: none;
+  background: red;
+}
 /*---------------------------- \
 | Links                        |
 \-----------------------------*/
