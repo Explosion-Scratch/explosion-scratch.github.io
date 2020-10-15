@@ -291,6 +291,9 @@ tr:first-child td:first-child {
 	margin: 0 auto;
 	padding: 10px;
 }
+td p {
+	font-size: 3vw;
+}
 .icon {
 	border-radius: 10px;
 	width: 80%;
