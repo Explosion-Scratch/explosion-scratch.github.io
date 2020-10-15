@@ -279,7 +279,7 @@ blockquote {
   width: 100vw;
   padding: none;
   margin: none;
-  background: red;
+  background: var(--background);
 }
 /*---------------------------- \
 | Links                        |
