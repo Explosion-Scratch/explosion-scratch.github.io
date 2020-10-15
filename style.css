@@ -775,6 +775,7 @@ main h2 {
 
 /* Rotaty square things */
 .area{
+	z-index: -100;
     width: 100%;
     height:100vh;
 }
@@ -789,7 +790,7 @@ main h2 {
 }
 
 .circles li{
-		z-index: 1;
+		z-index: 0;
     position: absolute;
     display: block;
     list-style: none;
