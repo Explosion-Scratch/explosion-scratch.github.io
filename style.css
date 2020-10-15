@@ -275,11 +275,11 @@ blockquote {
   border-radius: 0 10px 10px 0;
 }
 .cover {
-	height: 100vh;
-	width: 100vw;
-	padding: none;
-	margin: none;
-	background: red;
+  height: 100vh;
+  width: 100vw;
+  padding: none;
+  margin: none;
+  background: red;
 }
 /*---------------------------- \
 | Links                        |
