@@ -284,8 +284,13 @@ blockquote {
 .front_table td{
 	width: 50%;
 }
+.front-table td:first-child {
+	height: 100%;
+}
 .icon {
 	border-radius: 10px;
+	width: 100%;
+	vertical-align: middle;
 }
 table{
 	background: red;
