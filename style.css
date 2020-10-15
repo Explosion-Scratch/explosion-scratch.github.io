@@ -289,7 +289,6 @@ tr:first-child td:first-child {
 	vertical-align: middle;
 	text-align: center;
 	margin: 0 auto;
-	border: 1px solid blue;
 	padding: 10px;
 }
 .icon {
@@ -297,7 +296,6 @@ tr:first-child td:first-child {
 	width: 80%;
 }
 table{
-	background: red;
 	padding: 20px;
 	border-radius: 10px;
 	position: absolute;
