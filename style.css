@@ -284,6 +284,9 @@ blockquote {
 .front_table td{
 	width: 50%;
 }
+.icon {
+	border-radius: 10px;
+}
 table{
 	background: red;
 	padding: 20px;
