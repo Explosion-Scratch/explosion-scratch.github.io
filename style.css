@@ -286,6 +286,8 @@ blockquote {
 }
 .front-table table{
 	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 /*---------------------------- \
 | Links                        |
