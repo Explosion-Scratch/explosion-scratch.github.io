@@ -285,9 +285,9 @@ blockquote {
 	width: 50%;
 }
 .front-table table{
-	display: flex;
-	align-content: center;
-	justify-content: center;
+	display: block;
+	margin: 0 auto;
+	vertical-align: middle;
 }
 /*---------------------------- \
 | Links                        |
