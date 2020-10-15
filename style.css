@@ -284,7 +284,8 @@ blockquote {
 .front_table td{
 	width: 50%;
 }
-.front-table table{
+table{
+	background: red;
 	display: block;
 	margin: 0 auto;
 	vertical-align: middle;
