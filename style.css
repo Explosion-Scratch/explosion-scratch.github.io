@@ -298,6 +298,7 @@ td h1 {
 	font-size: 6vw;
 }
 .icon {
+	z-index: 1;
 	border-radius: 10px;
 	width: 80%;
 }
