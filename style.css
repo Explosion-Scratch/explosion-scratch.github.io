@@ -294,6 +294,9 @@ tr:first-child td:first-child {
 td p {
 	font-size: 3vw;
 }
+td h1 {
+	font-size: 6vw;
+}
 .icon {
 	border-radius: 10px;
 	width: 80%;
