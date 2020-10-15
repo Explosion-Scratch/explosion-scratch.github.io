@@ -285,7 +285,7 @@ blockquote {
 	width: 50%;
 }
 td:first-child {
-	height: 300px;
+	height: 100%;
 	vertical-align: middle;
 	text-align: center;
 	margin: 0 auto;
