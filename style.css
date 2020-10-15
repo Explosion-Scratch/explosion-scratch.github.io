@@ -281,6 +281,12 @@ blockquote {
   margin: none;
   background: var(--background);
 }
+.front_table td{
+	width: 50%;
+}
+.front-table table{
+	display: flex;
+}
 /*---------------------------- \
 | Links                        |
 \-----------------------------*/
