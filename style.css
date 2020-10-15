@@ -284,12 +284,13 @@ blockquote {
 .front_table td{
 	width: 50%;
 }
-td:first-child {
+tr:first-child td:first-child {
 	height: 100%;
 	vertical-align: middle;
 	text-align: center;
 	margin: 0 auto;
 	border: 1px solid blue;
+	padding: 20px;
 }
 .icon {
 	border-radius: 10px;
