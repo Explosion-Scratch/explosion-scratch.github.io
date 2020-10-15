@@ -777,8 +777,6 @@ main h2 {
 .area{
     width: 100%;
     height:100vh;
-    
-   
 }
 
 .circles{
@@ -791,7 +789,7 @@ main h2 {
 }
 
 .circles li{
-	z-index: -100;
+		z-index: 1;
     position: absolute;
     display: block;
     list-style: none;
