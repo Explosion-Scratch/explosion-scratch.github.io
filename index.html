@@ -1,24 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="Prism/prism.css" />
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:400,900"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>--Explosion-- | Home</title>
-  </head>
-  <div class="cover"></div>
+
+<head>
+	<link rel='stylesheet' href='Prism/prism.css'>
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js">
+
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<title>--Explosion-- | Home</title>
+</head>
+
+<body>
+	<div class="header-container">
+		<header>
+			<div class="heading">
+				<div class="container">
+					<h1>--Explosion--</h1>
+				</div>
+			</div>
+			<!-- This section will need to be changed if copy pasted to another page, along with the one with the mobile menu items. -->
+			<div class="menu-items">
+				<div class="container">
+					<div class="menu">
+						<ul>
+							<li><a href="index.html#home">Home</a></li>
+							<li><a href="index.html#contact">Contact</a></li>
+							<li><a href="projects.html">Projects</a></li>
+						</ul>
+					</div>
+					<div class="social">
+						<ul>
+							<li class="search-icon-desktop"><i class="fas fa-search"></i></li>
+							<li><a href="mailto:explosion-scratch@gmail.com"><span class="iconify" data-icon="clarity:email-solid" data-inline="false"></span></a></li>
+							<li><a href="https://github.com/explosion-scratch"><span class="iconify" data-icon="bytesize:github" data-inline="false"></span></i></a></li>
+							<li><a href="https://scratch.mit.edu/users/--explosion--"><span class="iconify" data-icon="simple-icons:scratch" data-inline="false"></span></a></li>
+						</ul>
+					</div>
+
+					<div class="searchbox-desktop">
+						<form id="Search">
+							<input target="_blank_" id="Text_Search" type="text" placeholder="Search Here...">
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="mobile-header">
+		<header>
+			<div class="menu-icon" onclick='menu(this)'>
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div class="heading">
+				<h1>--Explosion--</h1>
+			</div>
+			<div class="search-icon">
+				<i class="fas fa-search"></i>
+				<i class="fas fa-times"></i>
+			</div>
+		</header>
+	</div>
+
+	<div class="mobile-menu-items">
+		<ul>
+			<br>
+			<li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="projects.html">Projects</a></li>
+		</ul>
+	</div>
+
+	<div class="searchbox-mobile">
+		<form id="Mobile_Search">
+			<input target="_blank_" id="Mobile_Text_Search" type="text" placeholder="Search Here...">
+		</form>
+	</div>
+	<button class="dark-button" onclick='DarkMode()'><img class="dark-image" src="Images/Dark_Mode.svg"></button>
+	<!-- At this point the html tag and the body tag still are not closed. -->
+  
+	<main><a name='home'></a>
+		<div class="page-content">
+			<div class="container">
+			</div>
+			<div class='image-container-container'>
+				<div text='Wassup.' class='image-container'>
+					<img id='blur-text-image' src='https://i.ytimg.com/vi/ReF6iQ7M5_A/maxresdefault.jpg'>
+				</div>
+			</div>
+			<h1>Hi!</h1>
+			<p>Hi there! Welcome to my website! I am a 14 year old coder, guitarist and an avid reader! I really like to make stuff <a href="https://scratch.mit.edu/users/--explosion--">on scratch</a> I like to code a bunch of 3d stuff in a software called <a href="https://blender.org">Blender</a>. Recently I have moved a way from scratch a little bit and worked more on coding in python and HTML/CSS/JavaScript. You can find my projects over <a href="https://github.com/explosion-scratch">on my GitHub account</a>. In my spare time I like to code, read, play guitar, and.... Code more. 🤦 Right now I am working with a few other scratchers to code an amazing (<i>okay</i>, of course I'd think that) browser extension. It pretty much gives you scratch superpowers! This includes searching blocks, seeing how much a project is loaded, viewing deleted comments and much more! You can check that out over on the <a href="https://explosion-scratch.github.io/scratchaddons.github.io">ScratchAddons official website</a> or on the <a href="https://github.com/scratchaddons/scratchaddons">GitHub repository</a> for it.
+			</p>
+			<img id='img' src='https://www.sciencenews.org/wp-content/uploads/2020/02/020620_ec_cold-hot_feat-1028x579.jpg'>
+			<h1>Contact me</h1><a name='contact'></a>
+			<p>Feel free to contact me through <a id="link" href="mailto: explosionscratch@gmail.com">email</a>, on my <a href="https://github.com/explosion-scratch">GitHub</a> account or on <a href="https://scratch.mit.edu/users/--explosion--">Scratch</a>.</p><br>
+      <h1>Projects</h1>
+      <p>I have a bunch of projects that I've made so far, you can check them all out <a href='projects.html'>here</a>.
+			<blockquote>Testing blockquotes</blockquote>
+		</div>
+		</div>
+	</main>
+</body>
+<footer>
+	<ul>
+		<li><a href="index.html#home">Home</a></li>
+		<li><a href="index.html#contact">Contact</a></li>
+		<li><a href="projects.html">Projects</a></li>
+	</ul>
+</footer>
 </html>
+<script src="main.js"></script>
+<script src="Prism/prism.js"></script>
