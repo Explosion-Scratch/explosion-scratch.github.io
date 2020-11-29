@@ -80,6 +80,9 @@
 	var url = window.location.pathname;
 	url = url.replace('.html', '');
 	url = url.replace(/\//, '');
+  if(editDistance(closest(url), url) < 3) {
+    window.location.href = `http://explosion.cf/${closest(url)}`;
+  }
 	var newurl = closest(url);
 	document.getElementById(
 		'closest'
