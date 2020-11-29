@@ -76,8 +76,14 @@
 	</style>
 </body>
 <script>
-	var urls = ['index', 'blog', 'projects'];
+	window.onload = function () {
+		var newurl = closest(window.location.pathname);
+		document.getElementById(
+			'closest'
+		).innerHTML = `Did you mean "<a href='${newurl}.html'>${newurl}.html</a>"?`;
+	};
 	function closest(str) {
+		var urls = ['index', 'blog', 'projects'];
 		urls.sort((a, b) => editDistance(a, str) - editDistance(str, b));
 		return urls[0];
 	}
