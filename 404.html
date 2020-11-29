@@ -21,7 +21,7 @@
 							<h3 class="h2">Looks like you're lost!</h3>
 
 							<p>The page you're looking for is not avalible!</p>
-
+							<p id="closest"></p>
 							<a href="index.html" class="link_404">Go to Home</a
 							><a class="link_404" onclick="history.back()"
 								>Return to the previous page</a
@@ -77,6 +77,10 @@
 </body>
 <script>
 	var urls = ['index', 'blog', 'projects'];
+	function closest(str) {
+		urls.sort((a, b) => editDistance(a, str) - editDistance(str, b));
+		return urls[0];
+	}
 	function editDistance(s1, s2) {
 		s1 = s1.toLowerCase();
 		s2 = s2.toLowerCase();
