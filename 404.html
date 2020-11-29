@@ -78,6 +78,8 @@
 <script>
 	// Function for load
 	var url = window.location.pathname;
+	url = url.replace('.html', '');
+	url = url.replace(/\//, '');
 	var newurl = closest(url);
 	document.getElementById(
 		'closest'
