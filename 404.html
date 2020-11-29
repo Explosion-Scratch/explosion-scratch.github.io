@@ -1,77 +1,103 @@
 <head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-  />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+	/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <section class="page_404">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="col-sm-10 col-sm-offset-1 text-center">
-            <div class="four_zero_four_bg">
-              <h1 class="text-center">404</h1>
-            </div>
+	<section class="page_404">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="col-sm-10 col-sm-offset-1 text-center">
+						<div class="four_zero_four_bg">
+							<h1 class="text-center">404</h1>
+						</div>
 
-            <div class="contant_box_404">
-              <h3 class="h2">Looks like you're lost!</h3>
+						<div class="contant_box_404">
+							<h3 class="h2">Looks like you're lost!</h3>
 
-              <p>The page you're looking for is not avalible!</p>
+							<p>The page you're looking for is not avalible!</p>
 
-              <a href="index.html" class="link_404">Go to Home</a
-              ><a class="link_404" onclick="history.back()"
-                >Return to the previous page</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+							<a href="index.html" class="link_404">Go to Home</a
+							><a class="link_404" onclick="history.back()"
+								>Return to the previous page</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <style>
-    .page_404 {
-      padding: 40px 0;
-      background: #fff;
-      font-family: "Arvo", serif;
-    }
+	<style>
+		.page_404 {
+			padding: 40px 0;
+			background: #fff;
+			font-family: 'Arvo', serif;
+		}
 
-    .page_404 img {
-      width: 100%;
-    }
+		.page_404 img {
+			width: 100%;
+		}
 
-    .four_zero_four_bg {
-      background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-      height: 400px;
-      background-position: center;
-    }
+		.four_zero_four_bg {
+			background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+			height: 400px;
+			background-position: center;
+		}
 
-    .four_zero_four_bg h1 {
-      font-size: 80px;
-    }
+		.four_zero_four_bg h1 {
+			font-size: 80px;
+		}
 
-    .four_zero_four_bg h3 {
-      font-size: 80px;
-    }
+		.four_zero_four_bg h3 {
+			font-size: 80px;
+		}
 
-    .link_404 {
-      transition-duration: 0.5s;
-      border-radius: 5px;
-      margin: 20px;
-      color: #fff !important;
-      padding: 10px 20px;
-      background: #39ac31;
-      display: inline-block;
-    }
-    .link_404:hover {
-      background-color: #34a02c;
-    }
-    .contant_box_404 {
-      margin-top: -50px;
-    }
-  </style>
+		.link_404 {
+			transition-duration: 0.5s;
+			border-radius: 5px;
+			margin: 20px;
+			color: #fff !important;
+			padding: 10px 20px;
+			background: #39ac31;
+			display: inline-block;
+		}
+		.link_404:hover {
+			background-color: #34a02c;
+		}
+		.contant_box_404 {
+			margin-top: -50px;
+		}
+	</style>
 </body>
+<script>
+	var urls = ['index', 'blog', 'projects'];
+	function editDistance(s1, s2) {
+		s1 = s1.toLowerCase();
+		s2 = s2.toLowerCase();
+
+		var costs = new Array();
+		for (var i = 0; i <= s1.length; i++) {
+			var lastValue = i;
+			for (var j = 0; j <= s2.length; j++) {
+				if (i == 0) costs[j] = j;
+				else {
+					if (j > 0) {
+						var newValue = costs[j - 1];
+						if (s1.charAt(i - 1) != s2.charAt(j - 1))
+							newValue = Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
+						costs[j - 1] = lastValue;
+						lastValue = newValue;
+					}
+				}
+			}
+			if (i > 0) costs[s2.length] = lastValue;
+		}
+		return costs[s2.length];
+	}
+</script>
